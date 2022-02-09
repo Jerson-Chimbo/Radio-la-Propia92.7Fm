@@ -1,7 +1,9 @@
 <div class="banner"></div>
                 <div class="transmicion">
                     <h2>Transmición<span> en  vivo</span></h2>
-                    <div class="reproductor"></div>
+                    <div class="reproductor">
+                        <video src="https://www.youtube.com/watch?v=LnqjvuwA83s&t=14s" controls></video>
+                    </div>
                 </div>
                 <div class="noticias">
                     <article>

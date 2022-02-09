@@ -37,9 +37,11 @@ body , html{
     position: relative;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .logo{
+    
     width: 200px;
     height: 150px;
     border-radius: 75%;
@@ -56,7 +58,7 @@ body , html{
     position: absolute;
     width: auto;
     top: 50%;
-    left: 25%;
+    left: 22rem;
     transform: translate(-50%,-50%);
     font-size: 1.4rem;
     font-family: hidden;
@@ -112,4 +114,57 @@ z-index: -10;
 .banner{
     width: 95%;
     margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.transmicion{
+width: 80%;
+margin: auto;
+}
+.transmicion > h2{
+    text-align: center;
+    color: var(--color-terciario);
+}
+.transmicion > h2 > span{
+    color: var(--color-secundario);
+}
+.reproductor{
+    width: 100%;
+    height: 75vh;
+    background-image: linear-gradient(45deg , var(--color-terciario),var(--color-secundario));
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reproductor > video{
+    width: 95%;
+    height: 95%;
+    display: block;
 }
