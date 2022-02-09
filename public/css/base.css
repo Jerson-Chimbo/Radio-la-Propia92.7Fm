@@ -1,0 +1,10 @@
+
+:root{
+    --color-principal: #030f2e;
+    --color-secundario: #12c10d;
+    --color-terciario: #d15b18;
+    --padding-1: 0.5rem;
+    --padding-2: 1rem;
+    --paddig-3: 1.5rem;
+    --box-shadow: 0 0 5px black;
+}
