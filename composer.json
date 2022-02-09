@@ -1,0 +1,26 @@
+{
+    "name": "radio/la_propia92.7",
+    "description": "Es una pagina web informativa de la radio propia 92.7",
+    "type": "project",
+    "license": "BSD",
+    "autoload": {
+        "psr-4": {
+            "controllers\\": "src/controllers",
+            "frame\\": "src/frame",
+            "aplication\\": "src/aplication",
+            "models\\":"models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DorianA",
+            "email": "dorian9armijos@gmail.com"
+        },
+        {
+            "name": "Jerson-Chimbo",
+            "email": "jerson.chimbo2000@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

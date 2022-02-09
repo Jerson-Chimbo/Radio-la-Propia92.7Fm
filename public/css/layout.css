@@ -1,0 +1,19 @@
+@import url('base.css');
+
+/*
+--color-principal: #030f2e;
+    --color-secundario: #12c10d;
+    --color-terciario: #d15b18;
+    --padding-1: 0.5rem;
+    --padding-2: 1rem;
+    --paddig-3: 1.5rem;
+    --box-shadow: 0 0 5px black;
+*/
+
+
+body , html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
