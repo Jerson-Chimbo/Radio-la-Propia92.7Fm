@@ -15,5 +15,101 @@ body , html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--tipografia);
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+.header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header-sup{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+    height: 150px;
+    border-radius: 75%;
+    overflow: hidden;
+    
+}
+.logo > img{
+    width: 100%;
+    height: 400px;
+    transform: translateY(-8rem);
+    object-fit:contain;
+}
+.slogan{
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    font-size: 1.4rem;
+    font-family: hidden;
+    color: var(--color-terciario);
+}
+.header-in{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+}
+.cuadrado{
+    width: 20%;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.cuadrado:nth-child(2n){
+   background-color: var(--color-terciario);
+}
+.cuadrado:nth-child(2n-1){
+    background-color: var(--color-secundario);
+}
+.cuadrado:last-child{
+    position: relative;
+}
+.cuadrado:last-child::before{
+content: "";
+width: 4rem;
+height: 100%;
+background-color: var(--color-secundario);
+position: absolute;
+transform: rotate(45deg) scale(0.8);
+top: 0;
+right: -2rem;
+z-index: -10;
+}
+.redes{
+    display: inline-flex;
+    gap: 0.5rem;
+}
+.redes > img{
+    width: 50px;
+    height: 50px;
+}
+.main{
+    flex-grow: 1;
+}
+
+.banner{
+    width: 95%;
+    margin: auto;
+}
