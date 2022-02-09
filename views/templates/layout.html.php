@@ -36,7 +36,7 @@
         </main>
         <footer class="footer">
                 <aside class="footer-sup">
-                    <div>Radio La Propia 92.7 FM 
+                    <div class="uno">Radio La Propia 92.7 FM 
                         siguiendo de cerca todas el deporte ecuatoriano. 
                         Llevamos 36 años junto a ti siendo la radio líder en sintonía.</div>
                     <div class="nav-footer">
@@ -46,7 +46,7 @@
                         <div>Serviciós</div>
                         <div>Contactanos</div>
                     </div>
-                    <div><h3>Redes Sociales</h3>
+                    <div ><h3>Redes Sociales</h3>
                         <img src="" alt="">
                         <img src="" alt="">
                         <img src="" alt="">

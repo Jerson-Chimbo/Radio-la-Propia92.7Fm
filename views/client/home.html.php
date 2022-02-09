@@ -21,6 +21,7 @@
                     </div>
                 </div>
                 <div class="noticias">
+                    <h2>Las mejores noticias del momento</h2>
                     <article>
                         <img src="" alt="">
                         <h2></h2>
