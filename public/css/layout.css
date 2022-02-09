@@ -203,7 +203,7 @@ margin: auto;
 .info a{
 	color: #fff;
 	text-decoration: none;
-	background: #3088e0;
+	background: var(--color-terciario);
 	padding: 16px 37px;
 	display: inline-block;
 	border-radius: 50px;
