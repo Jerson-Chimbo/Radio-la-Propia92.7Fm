@@ -75,9 +75,12 @@ body , html{
     height: 4rem;
     line-height: 4rem;
     text-align: center;
-    color: white;
+    
     font-weight: bold;
     font-size: 1.4rem;
+}
+a{
+    text-decoration: none;
 }
 .cuadrado:nth-child(2n){
    background-color: var(--color-terciario);
@@ -87,6 +90,9 @@ body , html{
 }
 .cuadrado:last-child{
     position: relative;
+}
+.cuadrado>a{
+    color: white;
 }
 .cuadrado:last-child::before{
 content: "";
@@ -145,12 +151,22 @@ z-index: -10;
 .transmicion{
 width: 80%;
 margin: auto;
+margin-top: 1rem;
 }
-.transmicion > h2{
+.transmicion > div{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.transmicion > div> h2{
     text-align: center;
     color: var(--color-terciario);
+    width: auto;
+    padding: var(--padding-1);
+    font-size: 1.8rem;
 }
-.transmicion > h2 > span{
+.transmicion >div> h2 > span{
     color: var(--color-secundario);
 }
 .reproductor{

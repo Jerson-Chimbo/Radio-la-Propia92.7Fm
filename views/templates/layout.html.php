@@ -22,15 +22,17 @@
                 </div>
             </div>
             <nav class="header-in">
-                <div class="cuadrado">Inicio</div>
-                <div class="cuadrado">Quienes Somos</div>
-                <div class="cuadrado">Programación</div>
-                <div class="cuadrado">Serviciós</div>
-                <div class="cuadrado ultimo">Contactanos</div>
+                <div class="cuadrado"> <a href=""> Inicio </a></div>
+                <div class="cuadrado"> <a href=""> Quienes Somos</a></div>
+                <div class="cuadrado"> <a href=""> Programación</a></div>
+                <div class="cuadrado"> <a href=""> Serviciós</a></div>
+                <div class="cuadrado ultimo"> <a href=""> Contactanos</a></div>
             </nav>
         </div>
         <main class="main">
+
                 <?= $content ?>
+
         </main>
         <footer class="footer">
                 <aside class="footer-sup">

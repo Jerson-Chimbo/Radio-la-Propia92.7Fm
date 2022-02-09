@@ -8,10 +8,10 @@
 			<p>Somos la mejor radio a nivel nacional con las mejores noticias, deportes y mucho mas.</p> -->
 </div>
 		
-	</div>
+</div>
 
                 <div class="transmicion">
-                    <h2>Transmición<span> en  vivo</span></h2>
+                    <div><h2>Aquí te presentamos la <span>Transmición en  vivo</span></h2></div>
                     <div class="reproductor">
                         <img src="/public/asset/img/personal.jfif" alt="">
                         <div class="audio">

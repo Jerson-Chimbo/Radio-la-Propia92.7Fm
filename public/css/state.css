@@ -26,4 +26,31 @@
         object-fit:contain;
 	}
 }
+.transmicion > div> h2{
+	animation: traslado 10s infinite linear;
+}
+.cuadrado:hover{
+	background-color: var(--color-principal);
+	transform: scale(1.1);
+}
+.cuadrado:last-child:hover::before{
+	background-color: var(--color-principal);
+}
+@keyframes traslado {
+	0%{
+		transform: translateX(-45rem) scale(0.9);
+	}
+	25%{
+		transform: translateX(-10rem) scale(1.1);
+	}
+	50%{
+		transform: translateX(5rem) scale(0.9);
+	}
+	75%{
+		transform: translateX(25rem) scale(1.1);
+	}
+	100%{
+		transform: translateX(55rem)scale(0.9);
+	}
+}
 
