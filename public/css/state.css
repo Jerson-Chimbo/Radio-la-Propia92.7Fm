@@ -6,12 +6,12 @@
 
 @keyframes banner{
 	0%, 20%{
-		background-image: url("/public/asset/img/baner2.jpg");
+		background-image: url("/public/asset/img/baner5.jpg");
         background-repeat: no-repeat;
         object-fit:contain;
 	}
 	25%, 45%{
-		background-image: url("/public/asset/img/baner3.jpg");
+		background-image: url("/public/asset/img/baner2.jpg");
         background-repeat: no-repeat;
         object-fit:contain;
 	}
@@ -21,7 +21,7 @@
         object-fit:contain;
 	}
 	75%, 100%{
-		background-image: url("/public/asset/img/baner2.jpg");
+		background-image: url("/public/asset/img/baner5.jpg");
         background-repeat: no-repeat;
         object-fit:contain;
 	}
