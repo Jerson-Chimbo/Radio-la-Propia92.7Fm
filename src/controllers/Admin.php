@@ -38,16 +38,25 @@ class Admin{
     public function saveNoticias(){
         $noticias = file_get_contents('./models/noticias/noticias.json');
         $array = json_decode($noticias,true);
-
+        $patch = './public/asset/img/';
+        $nombreArchivo= $_FILES['imagen']['name'];
+        $nombreGuardar = $patch.$nombreArchivo;
+        $archivoTemporal = $_FILES['imagen']['tmp_name'];
         $array['noticias'][] = [
-            'title' => 'hola',
-            'img' => 'public/asset/asa',
-            'descripcion' => 'lorem50'
+            'title' => $_POST['titulo'],
+            'img' => ltrim($nombreGuardar,'./'),
+            'descripcion' => $_POST['descripcion']
         ];
-        
+        move_uploaded_file($archivoTemporal,$nombreGuardar);
         file_put_contents('./models/noticias/noticias.json',json_encode($array));
+        return [
+            'title' => 'Inicie Session',
+            'template' => 'admin/addNoticias.html.php',
+            'administrador' => true,
+            'variables' => [
+                'correcto' => 'Se ingreso correctamente la noticia'
+            ]
+        ];
 
-
-        die;
     }
 }
