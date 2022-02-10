@@ -53,6 +53,26 @@ class RoutesAplication implements  Routes {
                 ],
                 //'login' => true
             ],
+            'admin/list/noticias' => [
+                'GET' => [
+                    'controller' => $adminController,
+                    'action' => 'listNoticias'
+                ],
+                'POST' => [
+                    'controller' => $adminController,
+                    'action' => 'deleteNoticias'
+                ],
+            ],
+            'admin/edit/noticias'=> [
+                'GET' => [
+                    'controller' => $adminController,
+                    'action' => 'editNoticias'
+                ],
+                'POST' => [
+                    'controller' => $adminController,
+                    'action' => 'saveEditNoticias'
+                ],
+            ],
             'salir' => [
                 'GET' => [
                     'controller' => $loginController,

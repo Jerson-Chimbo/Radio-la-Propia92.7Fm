@@ -22,11 +22,18 @@
                 </div>
                 <div class="noticias">
                     <h2>Las mejores noticias del momento</h2>
-                    <?php foreach($noticias as $value): ?>
+                    <?php
+
+use aplication\Utiles;
+
+foreach($noticias as $value): ?>
                     <article>
                         <img src="/<?= $value['img'] ?>" alt="">
                         <h2> <?= $value['title'] ?> </h2>
-                        <p> <?= $value['descripcion'] ?> </p>
+                        <div> <?php
+                        $string = new Utiles($value['descripcion']);
+
+                        echo $string->textReplace()  ?> </div>
                     </article>
 
                     <?php endforeach; ?>

@@ -12,13 +12,14 @@
         <div class="header">
             <div class="header-sup">
                 <div class="logo">
-                    <img src="/public/asset/img/propia.jfif" alt="radio">
+                    <a href="/"><img src="/public/asset/img/propia.jfif" alt="radio"></a>
                     <span class="slogan">La radio mas grande del planeta</span>
                 </div>
             </div>
             <?php if(isset($_SESSION['admin'])): ?>
             <nav class="header-in">
                 <div class="cuadrado"> <a href="/admin/add/noticias"> Inresar Noticias </a></div>
+                <div class="cuadrado"> <a href="/admin/list/noticias"> Opciones de Noticias </a></div>
                 <div class="cuadrado-ul"> <a href=""> Ingresar los Servicios</a></div>
             </nav>
         </div>

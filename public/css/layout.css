@@ -48,7 +48,7 @@ body , html{
     overflow: hidden;
     
 }
-.logo > img{
+.logo >a > img{
     width: 100%;
     height: 400px;
     transform: translateY(-8rem);
@@ -293,7 +293,7 @@ margin-top: 1rem;
     margin: 0;
     padding: 0;
 }
-.noticias > article > p{
+.noticias > article > div{
     background-color: #ccc;
     width: 100%;
     /* grid-column: columna2/fin-columna;
@@ -302,10 +302,10 @@ margin-top: 1rem;
     margin: 0;
     padding: 0;
 }
+
 .footer{
     width: 100%;
     margin: auto;
-
 }
 .footer-sup{
     display: flex;
@@ -357,7 +357,7 @@ margin-top: 1rem;
 .formulario{
     width: 40%;
     margin: 2rem auto;
-    height: 15rem;
+    min-height: 15rem;
 }
 .formulario > form{
     display: inline-flex;
@@ -365,7 +365,7 @@ margin-top: 1rem;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: inherit;
+    min-height: inherit;
     padding: var(--padding-1);
     background-image: linear-gradient(45deg , var(--color-secundario),var(--color-terciario));
     box-shadow: var(--box-shadow);
@@ -390,7 +390,10 @@ margin-top: 1rem;
     border-radius: 1rem;
 }
 
-
+.formulario> form > textarea{
+    width: 90%;
+    min-height: 20rem;
+}
 /* Estilos para formulario de ingresar noticias */
 .formulario1{
     width: 60%;
@@ -440,3 +443,45 @@ margin-top: 1rem;
 
 
 
+.list-noticias{
+    width: 50%;
+    margin: auto;
+}
+
+.list-noticias > blockquote{
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    padding: var(--padding-1);
+    justify-content: space-between;
+    background-color: var(--color-principal);
+    border-radius: 2rem;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+.list-noticias > blockquote> div{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--padding-1);
+    margin-right: 1rem;
+}
+.list-noticias button{
+    border-radius: 0.5rem;
+    background-color: var(--color-terciario);
+    color: white;
+    font-weight: bold;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    width: 8rem;
+    
+}
+.list-noticias a{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: underline solid var(--color-secundario);
+}

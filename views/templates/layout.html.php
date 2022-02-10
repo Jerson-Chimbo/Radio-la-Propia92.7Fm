@@ -12,7 +12,7 @@
         <div class="header">
             <div class="header-sup">
                 <div class="logo">
-                    <img src="/public/asset/img/propia.jfif" alt="radio">
+                    <a href="/"><img src="/public/asset/img/propia.jfif" alt="radio"></a>
                     <span class="slogan">La radio mas grande del planeta</span>
                 </div>
                 <div class="redes">

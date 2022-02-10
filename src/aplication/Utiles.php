@@ -4,7 +4,11 @@ namespace aplication;
 
 class Utiles
 {
-
+    private $string;
+    public function __construct(string $string = "")
+    {
+        $this->string= $string;
+    }
     public static function Encryp(string $string): string
     {
         $arrayString = preg_split('/(,)/i', $string);
@@ -78,5 +82,15 @@ class Utiles
 
     }
     
+    public function textReplace(){
+        $newString = preg_replace('/\*\*([^*]+)\*\*?/i', '<p>$1</p>', $this->string);
+        $newString = preg_replace('/__([^_]+)__?/i','<strong>$1</strong>',$newString);
+        $newString = preg_replace('/_([^_]+)?_/i','<i>$1</i>',$newString);
+        $newString = str_replace('&&','<br>',$newString);
+        return $newString;
+    }
 }
 
+// $str = new Utiles(' ** hola &&mundo __como estan__ ** adjsdasdjadas ** Es un nuevo parrafo  _esto es curvo_ dsadasdasda **');
+
+// echo $str->textReplace();
