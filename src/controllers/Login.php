@@ -21,13 +21,12 @@ class Login{
 
     public function loadLogin(){
         $user = $this->autentifiaction->startSession($_POST['cedula'],$_POST['password']);
-
         if($user){
             header('location: /admin/add/noticias');
         }else{
             return [
                 'title' => 'Inicie Session',
-                'template' => 'admin/addNoticias.html.php',
+                'template' => 'admin/login_admin.html.php',
                 'administrador' => true,
                 'variables' => [
                     'error' => 'Error argumentos invalidos'
