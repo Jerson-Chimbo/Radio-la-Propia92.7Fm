@@ -41,25 +41,42 @@ class EntryPoint{
             header('location: /error/session');
         }
 
-        if(isset($routes[$this->route]['permission']) &&
-        !$this->routesAplicaction->hashPermission($routes[$this->route]['permission'])){
+        // if(isset($routes[$this->route]['permission']) &&
+        // !$this->routesAplicaction->hashPermission($routes[$this->route]['permission'])){
             
-            header('location: /no/permission');
-        }
+        //     header('location: /no/permission');
+        // }
 
 
         $result = $controller->$action();
         $title = $result['title'];
-        if(isset($result['variables'])){
-            $content = $this->loadTemplate($result['template'],$result['variables']);
-        }else{
-            $content = $this->loadTemplate($result['template']);
-        }
 
-        echo $this->loadTemplate('templates/layout.html.php',[
-            'title' => $title,
-            'content' => $content
-        ]);
+        if(isset($result['administrador'])){
+
+            if(isset($result['variables'])){
+                $content = $this->loadTemplate($result['template'],$result['variables']);
+            }else{
+                $content = $this->loadTemplate($result['template']);
+            }
+    
+            echo $this->loadTemplate('templates/layout_admin.html.php',[
+                'title' => $title,
+                'content' => $content
+            ]);
+            
+        }else{
+            if(isset($result['variables'])){
+                $content = $this->loadTemplate($result['template'],$result['variables']);
+            }else{
+                $content = $this->loadTemplate($result['template']);
+            }
+    
+            echo $this->loadTemplate('templates/layout.html.php',[
+                'title' => $title,
+                'content' => $content
+            ]);
+        }
+        
 
         
     }

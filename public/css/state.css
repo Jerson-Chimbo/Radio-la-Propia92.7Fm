@@ -33,6 +33,10 @@
 	background-color: var(--color-principal);
 	transform: scale(1.1);
 }
+.cuadrado-ul:hover{
+	background-color: var(--color-principal);
+	transform: scale(1.1);
+}
 .cuadrado:last-child:hover::before{
 	background-color: var(--color-principal);
 }

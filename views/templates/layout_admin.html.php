@@ -15,20 +15,14 @@
                     <img src="/public/asset/img/propia.jfif" alt="radio">
                     <span class="slogan">La radio mas grande del planeta</span>
                 </div>
-                <div class="redes">
-                    <img src="/public/asset/img/facebook.jfif" alt="facebook">
-                    <img src="/public/asset/img/instagram.jfif" alt="instagram">
-                    <img src="/public/asset/img/what.jfif" alt="WhatSapp">
-                </div>
             </div>
+            <?php if(isset($_SESSION['admin'])): ?>
             <nav class="header-in">
-                <div class="cuadrado"> <a href=""> Inicio </a></div>
-                <div class="cuadrado"> <a href=""> Quienes Somos</a></div>
-                <div class="cuadrado"> <a href=""> Programación</a></div>
-                <div class="cuadrado"> <a href=""> Serviciós</a></div>
-                <div class="cuadrado ultimo"> <a href=""> Contactanos</a></div>
+                <div class="cuadrado"> <a href="/admin/add/noticias"> Inresar Noticias </a></div>
+                <div class="cuadrado-ul"> <a href=""> Ingresar los Servicios</a></div>
             </nav>
         </div>
+        <?php endif; ?>
         <main class="main">
 
                 <?= $content ?>

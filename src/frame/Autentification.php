@@ -1,20 +1,20 @@
 <?php
 
 namespace frame;
-use models\Employe;
+use models\Login;
 
 class Autentification{
-    private $employedTable;
+    private $loginTable;
     private $ci;
     private $clave;
 
     public function __construct(
-        Employe $employedTable,
+        Login $loginTable,
         string $ci,
         string $clave
     )
     {
-        $this->employedTable= $employedTable;
+        $this->loginTable= $loginTable;
         $this->ci=$ci;
         $this->clave= $clave;
         session_start();
@@ -23,10 +23,10 @@ class Autentification{
     public function startSession(string $ci, string $clave): bool
     {
 
-        $employe = $this->employedTable->selectFromColumn('cedula',$ci);
+        $employe = $this->loginTable->selectFromColumn($this->ci,$ci);
         if($employe && password_verify($clave, $employe[0]->{$this->clave}) ){
             session_regenerate_id();
-            $_SESSION['ci'] = $ci;
+            $_SESSION['admin'] = $ci;
             $_SESSION['password'] = $employe[0]->{$this->clave};
 
             return true;
