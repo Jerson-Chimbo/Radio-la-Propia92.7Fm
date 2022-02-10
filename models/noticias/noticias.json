@@ -1,0 +1,9 @@
+{
+    "noticias": [
+        {
+            "title": "Un dia lluvioso",
+            "img": "public/asset/img/imagen1.png",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea doloremque nemo explicabo aspernatur quae, ut eligendi architecto ducimus earum cum libero provident natus doloribus vel, sapiente assumenda iusto modi itaque deserunt voluptatum quis cupiditate asperiores necessitatibus temporibus! Deleniti corrupti blanditiis atque praesentium dignissimos. Distinctio unde velit voluptate exercitationem, iusto vero."
+        }
+    ]
+}

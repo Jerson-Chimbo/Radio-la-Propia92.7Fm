@@ -51,7 +51,7 @@ class RoutesAplication implements  Routes {
                     'controller' => $adminController,
                     'action' => 'addNoticias'
                 ],
-                'login' => true
+                //'login' => true
             ],
             'salir' => [
                 'GET' => [

@@ -38,11 +38,11 @@ class Autentification{
 
     public function validationAll(){
 
-        if(empty($_SESSION['ci'])){
+        if(empty($_SESSION['admin'])){
             return false;
         }
         
-        $result = $this->employedTable->selectFromColumn('cedula', $_SESSION['ci'])[0];
+        $result = $this->loginTable->selectFromColumn('cedula', $_SESSION['admin'])[0];
 
         
         if($result->{$this->clave} == $_SESSION['password']){
@@ -55,7 +55,7 @@ class Autentification{
     public function getUser(){
 
         if($this->validationAll()){
-            return $this->employedTable->selectFromColumn('cedula', $_SESSION['ci'])[0];
+            return $this->loginTable->selectFromColumn('cedula', $_SESSION['admin'])[0];
         }else{
             return false;
         }
