@@ -378,9 +378,7 @@ margin-top: 1rem;
     width: 80%;
     height: 2rem;
     border-radius: 1rem;
-    
-
-}
+ }
 
 .formulario > form > button{
     background-color: var(--color-terciario);
@@ -391,6 +389,53 @@ margin-top: 1rem;
     border-radius: 1rem;
 }
 
+
+/* Estilos para formulario de ingresar noticias */
+.formulario1{
+    width: 60%;
+    margin: 2rem auto;
+    height: 60rem;
+}
+
+.formulario1 > form{
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: inherit;
+    padding: var(--padding-2);
+    background-image: linear-gradient(45deg , var(--color-secundario),var(--color-terciario));
+    box-shadow: var(--box-shadow);
+    color: white;
+    font-weight: bold;
+    border-radius: 2rem;
+}
+
+.formulario1 > form >label{
+    font-size: 1.5rem;
+}
+.formulario1 > form > input{
+    width: 80%;
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+ }
+ .formulario1 > form >textarea{
+    width: 80%;
+    height: 40%;
+    border-radius: 1rem;
+ }
+
+.formulario1 > form > button{
+    background-color: var(--color-terciario);
+    padding: var(--padding-2);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+}
 
 
 
