@@ -16,6 +16,20 @@ class Home{
             ]
         ];
     }
+    public function quienesSomos(){
+        return[
+            'title' => 'Quienes Somos',
+            'template' => 'client/quienesSomos.html.php',
+            
+        ]; 
+    }
+    public function programacion(){
+        return[
+            'title' => 'Programacion',
+            'template' => 'client/programacion.html.php',
+   
+        ]; 
+    }
 
     
 }

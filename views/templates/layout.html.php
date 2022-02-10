@@ -22,9 +22,9 @@
                 </div>
             </div>
             <nav class="header-in">
-                <div class="cuadrado"> <a href=""> Inicio </a></div>
-                <div class="cuadrado"> <a href=""> Quienes Somos</a></div>
-                <div class="cuadrado"> <a href=""> Programación</a></div>
+                <div class="cuadrado"> <a href="/"> Inicio </a></div>
+                <div class="cuadrado"> <a href="/quienes-somos"> Quienes Somos</a></div>
+                <div class="cuadrado"> <a href="/programacion"> Programación</a></div>
                 <div class="cuadrado"> <a href=""> Serviciós</a></div>
                 <div class="cuadrado ultimo"> <a href=""> Contactanos</a></div>
             </nav>
@@ -40,9 +40,9 @@
                         siguiendo de cerca todas el deporte ecuatoriano. 
                         Llevamos 36 años junto a ti siendo la radio líder en sintonía.</div>
                     <div class="nav-footer">
-                        <div><a href=""> Inicio </a></div>
-                        <div><a href=""> Quienes Somos </a></div>
-                        <div><a href=""> Programación</a> </div>
+                        <div><a href="/"> Inicio </a></div>
+                        <div><a href="/quienes-somos"> Quienes Somos </a></div>
+                        <div><a href="/programacion"> Programación</a> </div>
                         <div><a href=""> Serviciós </a></div>
                         <div><a href=""> Contactanos </a> </div>
                     </div>

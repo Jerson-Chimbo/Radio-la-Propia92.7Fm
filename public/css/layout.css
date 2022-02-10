@@ -448,5 +448,124 @@ margin-top: 1rem;
     border-radius: 1rem;
 }
 
+/* Estilos para el menu de quienes somos */
+/* Estilos para el lateral*/
+aside#lateral{
+    float: right;
+    width: 25%;
+    margin-top: 10px;
+}
+.secundario{
+    padding: 15px;
+    background-image: linear-gradient(45deg , var(--color-secundario),var(--color-terciario));
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.secundario ul {
+    list-style: none;
+    padding: 10px;
+}
+article#main-principal>h1{
+    text-align: center;
+    text-align: center;
+    color: #ffffffff;
+    padding: var(--padding-1);
+    font-size: 1.8rem;
+    width: 100%;
+    height: 10vh;
+    line-height:10vh;
+    background-image: linear-gradient(45deg , var(--color-terciario),var(--color-secundario));
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    font-weight: bold;
+    justify-content:center;
 
+}    
+article#main-principal>p{
+   text-align: justify;
+   padding: 10px;  
+    font-size: 18px;
+    width: 100%;
+    height: 20%;
+    line-height:5vh;
+    background-color: white;
+    box-shadow: var(--box-shadow);  
+}    
+.secundario>p{
+    text-align: justify;
+}
+.secundario ul li  {
+    padding: 10px;
+}
+article#main-principal>img{
+    width: 100%;
+    height: 45%;
+    display: block;
+    background-color: white;
+    grid-area: imge;
+}
+#main{
+    width: 80%;
+    margin: auto;
+}
+/*estilos para el main principal*/
+article#main-principal{
+    float: left;
+    width: 65%;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    
+} 
+/* Estilos para el menu de quienes somos-porque elegirnos */
+.contenedor1{
+    width: 100%;
+    margin-top:5rem;
+    height: auto;
+    clear: both;
+    margin-top: 20px;
+    transition-property: all;
+}
+.contenedor1>h3{
+    text-align: center;
+    color: #ffffffff;
+    padding: var(--padding-1);
+    font-size: 1.8rem;
+    width: 100%;
+    height: 10vh;
+    line-height:10vh;
+    background-image: linear-gradient(45deg , var(--color-terciario),var(--color-secundario));
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    font-weight: bold;
+    justify-content:center;
 
+}
+
+.caja{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+
+}
+.caja img{
+    width: 290px;
+    height: 290px;
+    border-radius: 1rem;
+}
+
+.caja p{
+    list-style: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    /* background-image: linear-gradient(45deg , var(--color-terciario),var(--color-secundario)); */
+    background-color: var(--color-terciario);
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+}
+ 
