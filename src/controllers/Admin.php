@@ -37,10 +37,17 @@ class Admin{
 
     public function saveNoticias(){
         $noticias = file_get_contents('./models/noticias/noticias.json');
-        $array = json_decode($noticias,true)['noticias'];
+        $array = json_decode($noticias,true);
 
-        foreach($array as $key => $noticia){
-            var_dump($noticia);
-        }
+        $array['noticias'][] = [
+            'title' => 'hola',
+            'img' => 'public/asset/asa',
+            'descripcion' => 'lorem50'
+        ];
+        
+        file_put_contents('./models/noticias/noticias.json',json_encode($array));
+
+
+        die;
     }
 }

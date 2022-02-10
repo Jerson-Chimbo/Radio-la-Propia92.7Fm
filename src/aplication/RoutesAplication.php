@@ -49,7 +49,7 @@ class RoutesAplication implements  Routes {
                 ],
                 'POST' => [
                     'controller' => $adminController,
-                    'action' => 'addNoticias'
+                    'action' => 'saveNoticias'
                 ],
                 //'login' => true
             ],

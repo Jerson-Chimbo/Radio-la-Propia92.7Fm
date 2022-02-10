@@ -22,9 +22,14 @@
                 </div>
                 <div class="noticias">
                     <h2>Las mejores noticias del momento</h2>
+                    <?php foreach($noticias as $value): ?>
                     <article>
-                        <img src="" alt="">
-                        <h2></h2>
-                        <p></p>
+                        <img src="/<?= $value['img'] ?>" alt="">
+                        <h2> <?= $value['title'] ?> </h2>
+                        <p> <?= $value['descripcion'] ?> </p>
                     </article>
+
+                    <?php endforeach; ?>
                 </div>
+
+               
