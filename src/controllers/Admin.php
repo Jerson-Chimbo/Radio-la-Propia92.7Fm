@@ -19,7 +19,7 @@ class Admin{
             'cedula' => '0123456789',
             'clave' => $contra
         ];
-        $this->loginTable->insert($datos);
+        // $this->loginTable->insert($datos);
         return [
             'title' => 'Inicie Session',
             'template' => 'admin/login_admin.html.php',
