@@ -21,7 +21,7 @@ class Login{
 
     public function loadLogin(){
         $user = $this->autentifiaction->startSession($_POST['cedula'],$_POST['password']);
-
+        
         if($user){
             header('/admin/add/noticias');
         }else{

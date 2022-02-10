@@ -1,5 +1,5 @@
 <?php
 use aplication\Utiles;
-define('DBNAME','radio-la-propia92.7fm');
+define('DBNAME','book');
 define('USER','root');
 define('PASSWORD', 'barcelona2012');
