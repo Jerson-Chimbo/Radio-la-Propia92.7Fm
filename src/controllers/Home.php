@@ -39,4 +39,44 @@ class Home{
     }
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public function listContactos(){
+
+        return [
+            'title' => 'Lista de Contactos',
+            'template' => 'admin/list/contactos.html.php',
+            'variables' => [
+                'contactos' => ''
+            ]
+        ];
+    }
 }

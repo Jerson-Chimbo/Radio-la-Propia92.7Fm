@@ -163,8 +163,80 @@ class Admin{
         ];
 
         file_put_contents('./models/servicios/servicios.json',json_encode($array));
-
         header('location:/');
         
+    }
+
+    public function listServicios(){
+        $noticias = file_get_contents('./models/servicios/servicios.json');
+        $array = json_decode($noticias,true)['servicios'];
+        return [
+            'title' => 'Lista de Servicios',
+            'template' => 'admin/listServicios.html.php',
+            'administrador' => true,
+            'variables' => [
+                'servicios' => $array
+            ]
+        ];
+    }
+
+    public function editServicios(){
+        if(isset($_GET['nombre'])){
+            $servicios = file_get_contents('./models/servicios/servicios.json');
+            $array = json_decode($servicios,true);
+            $res =[];
+            foreach($array['servicios'] as  $value){
+               foreach($value as $key => $servicio){
+                  if($key == 'nombre' && $_GET['nombre'] == $servicio){
+                     $res = $value;
+                  }
+               }
+
+            }
+            return [
+                    'title' => 'Editar Servicio',
+                    'template' => 'admin/editServicio.html.php',
+                    'administrador' => true,
+                    'variables' => [
+                        'servicio' => $res
+                    ]
+                ];
+        }
+    }
+
+    public function saveEditServicios(){
+        $servicios = file_get_contents('./models/servicios/servicios.json');
+        $array = json_decode($servicios,true);
+        foreach($array['servicios'] as $index => $value){
+           foreach($value as $key => $servicio){
+              if($key == 'nombre' && $_POST['idT'] == $servicio){
+                 $array['servicios'][$index]['nombre'] = $_POST['nombre'];
+                 $array['servicios'][$index]['horas'] = $_POST['horas'];
+                 $array['servicios'][$index]['precio'] = $_POST['precio'];
+                 $array['servicios'][$index]['requisitos'] = $_POST['requisitos'];
+                 $array['servicios'][$index]['descripcion'] = $_POST['descripcion'];
+              }
+           }
+
+        }
+        file_put_contents('./models/servicios/servicios.json',json_encode($array));
+
+        header('location:/admin/lista/servicios');
+    }
+
+    public function deleteServicios(){
+        $servicios = file_get_contents('./models/servicios/servicios.json');
+        $array = json_decode($servicios,true);
+        foreach($array['servicios'] as $index => $value){
+           foreach($value as $key => $noticia){
+              if($key == 'nombre' && $_POST['nombre'] == $noticia){
+                unset($array['servicios'][$index]);
+                
+              }
+           }
+
+        }
+        file_put_contents('./models/servicios/servicios.json',json_encode($array));
+        header('location:/admin/lista/servicios');
     }
 }

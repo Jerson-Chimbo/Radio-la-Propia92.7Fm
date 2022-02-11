@@ -23,11 +23,11 @@
                 </div>
             </div>
             <nav class="header-in">
-                <div class="cuadrado"> <a href="/"> Inicio </a></div>
-                <div class="cuadrado"> <a href="/quienes-somos"> Quienes Somos</a></div>
-                <div class="cuadrado"> <a href="/programacion"> Programación</a></div>
-                <div class="cuadrado"> <a href="/servicios"> Serviciós</a></div>
-                <div class="cuadrado ultimo"> <a href="/contactos"> Contactos</a></div>
+            <a href="/"> <div class="cuadrado">  Inicio </div></a>
+            <a href="/quienes-somos">  <div class="cuadrado">  Quienes Somos</div></a>
+            <a href="/programacion">    <div class="cuadrado">  Programación</div></a>
+            <a href="/servicios">   <div class="cuadrado">  Serviciós</div></a>
+            <a href="/contactos">  <div class="cuadrado ultimo">  Contactos</div></a>
             </nav>
         </div>
         <main class="main">
