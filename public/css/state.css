@@ -12,7 +12,7 @@
 	}
 	25%, 45%{
 		background-image: url("/public/asset/img/baner2.jpg");
-        background-repeat: no-repeat;
+		background-repeat: no-repeat;
         object-fit:contain;
 	}
 	50%, 70%{

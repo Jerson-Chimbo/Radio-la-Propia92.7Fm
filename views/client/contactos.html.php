@@ -19,18 +19,18 @@
             <?php endif;?>
             <form action="" method="post">
                   <label>Nombre:</label>
-                  <input type="text" name="nombre" placeholder="Ingresa tu nombre"> 
+                  <input type="text" name="nombre" placeholder="Ingresa tu nombre"required> 
                     <label>Apellido:</label>
-                    <input type="text" name="apellido" placeholder="Ingresa tu apellido">  <br>
+                    <input type="text" name="apellido" placeholder="Ingresa tu apellido"required>  <br>
                   
                     <label>E-mail:</label>
-                    <input type="text" name="email" placeholder="Ingresa tu correo"> <br>  
+                    <input type="text" name="email" placeholder="Ingresa tu correo"required> <br>  
                   
                     <label>Telefono-Celular:</label>
-                    <input type="tel" name="telefono" placeholder="Ingresa tu numero celular">  <br> 
+                    <input type="tel" name="telefono" placeholder="Ingresa tu numero celular"required>  <br> 
 
                     <label>Direccion:</label>
-                    <input type="text" name="direccion" placeholder="Ingresa tu direccion"> <br>
+                    <input type="text" name="direccion" placeholder="Ingresa tu direccion"required> <br>
 
                     <label>Descripcion:</label>
                     <textarea name="descripcion"></textarea> <br>
@@ -57,8 +57,9 @@
         
          
         <section class="conten-map">
-
-        <h2>Ubicanos:</h2>
+        <section class="contenedor1">
+        <h3>Ubicanos</h3>
+        </section>
         <div class="mapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.2841218587355!2d-78.99807528595548!3d-1.5889702364776752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d31640122714a3%3A0x2049d7ad79a5fa5f!2s23%20de%20Abril%20%26%20Avenida%20Monse%C3%B1or%20Candido%20Rada%2C%20Guaranda!5e0!3m2!1ses!2sec!4v1644551042587!5m2!1ses!2sec"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>

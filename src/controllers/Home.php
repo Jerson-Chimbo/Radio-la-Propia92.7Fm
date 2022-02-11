@@ -23,9 +23,14 @@ private $contactosTable;
         ];
     }
     public function quienesSomos(){
+        $datos = file_get_contents('./models/servicios/direccion_imgs.json');
+        $array = json_decode($datos,true)['imgs'];
         return[
             'title' => 'Quienes Somos',
             'template' => 'client/quienesSomos.html.php',
+            'variables' => [
+                'fotos' => $array
+            ]
             
         ]; 
     }
@@ -59,7 +64,7 @@ private $contactosTable;
             'title' => 'Contactos',
             'template' => 'client/contactos.html.php',
             'variables' =>[
-                'correcto' => "Se ingreso correctamente esos datos"
+                'correcto' => "Sus datos se enviaron correctamente"
             ]
    
         ]; 

@@ -55,6 +55,15 @@ Nuestra emisora será un centro de desarrollo comunitario, que funciona en “Gu
                 </p>
             </div>
         </div>
+        <div class="contenedor1">
+            <h3>GALERIA</h3>
+        </div>
+
+        <div class="imagenes-galeria">
+            <?php foreach($fotos as $foto):?>
+                    <img  src="/<?= $foto?> " alt="">
+            <?php endforeach ?>
+        </div>
      
     </section>
 

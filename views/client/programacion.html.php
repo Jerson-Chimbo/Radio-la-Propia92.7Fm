@@ -1,7 +1,7 @@
 <div class="transmicion">
                     <div><h2>Aquí te presentamos la <span>Transmición en  vivo</span></h2></div>
                     <div class="reproductor">
-                        <img src="/public/asset/img/personal.jfif" alt="">
+                        <img src="/public/asset/img/baner6.jpg" alt="">
                         <div class="audio">
                             <di class="audio-title">Radio La Propia 92.7FM</di>
                             <audio src="https://streamingecuador.net:9006/stream" controls></audio>

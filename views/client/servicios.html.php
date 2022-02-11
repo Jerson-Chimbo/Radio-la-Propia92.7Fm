@@ -1,5 +1,5 @@
 <div class="servicos">
-<h2>Servicios que oferta la Radio la Propia 92.7FM</h2>
+<h2>Servicios que ofrece Radio la Propia 92.7FM</h2>
 
 <div class="servicios-items">
     <?php foreach($servicios as $servicio): ?>

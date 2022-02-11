@@ -247,4 +247,43 @@ class Admin{
             'administrador' => true
         ];
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public function saveGaleria(){
+        $datos = file_get_contents('./models/servicios/direccion_imgs.json');
+        $array = json_decode($datos,true);
+        $patch = './public/asset/img/galery/';
+        $nombreArchivo = $patch.$_FILES['foto']['name'];
+        $archivoTem = $_FILES['foto']['tmp_name'];
+        array_push($array['imgs'],ltrim($nombreArchivo,'./'));
+        move_uploaded_file($archivoTem,$nombreArchivo);
+        file_put_contents('./models/servicios/direccion_imgs.json',json_encode($array));
+        return [
+            'title' => 'Ingresar Imagenes',
+            'template' => 'admin/addGaleria.html.php',
+            'administrador' => true, 
+            'variables' => [
+                'correcto'=> "se Agregado la imagen a la Galeria"
+            ]
+        ];
+
+    }
 }

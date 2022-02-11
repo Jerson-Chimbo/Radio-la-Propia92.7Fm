@@ -1,3 +1,11 @@
+<?php 
+
+    if(isset($_SESSION['admin'])){
+        header('location: /admin/add/servicios');
+    }
+
+?>
+
 <div class="formulario">
 
 <?php if(isset($error)): ?>
