@@ -1028,9 +1028,12 @@ textarea{
     
     .transmicion > h2{
         font-size: 1.1rem;
+        overflow: auto;
     }
     .transmicion>h3{
         font-size: 1.1rem;
+        overflow: auto;
+        
     }
     article#main-principal>img{
         width: 98%;
@@ -1058,5 +1061,16 @@ textarea{
     }
     .footer-inf{
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .imagenes-servicios{
+        flex-direction: column;
+    }
+    .imagenes-servicios>img{
+        width: 250px;
+        height: 250px;
+        flex-wrap: wrap;
     }
 }

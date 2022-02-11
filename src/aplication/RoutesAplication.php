@@ -79,6 +79,7 @@ class RoutesAplication implements  Routes {
                     'controller' => $adminController,
                     'action' => 'saveEditNoticias'
                 ],
+                'login' => true
             ],
             'admin/add/servicios' => [
                 'GET' => [
@@ -89,6 +90,7 @@ class RoutesAplication implements  Routes {
                     'controller' => $adminController,
                     'action' => 'saveServicios'
                 ],
+                'login' => true
             ],
             'servicios' => [
                 'GET' => [
@@ -127,6 +129,7 @@ class RoutesAplication implements  Routes {
                     'controller' => $adminController,
                     'action' => 'deleteServicios'
                 ],
+                'login' => true
             ],
             'admin/edit/servicios'=>[
                 'GET' => [
@@ -137,6 +140,7 @@ class RoutesAplication implements  Routes {
                     'controller' => $adminController,
                     'action' => 'saveEditServicios'
                 ],
+                'login' => true
             ],
 
             'admin/add/galeria' => [
@@ -148,6 +152,7 @@ class RoutesAplication implements  Routes {
                     'controller' => $adminController,
                     'action' => 'saveGaleria'
                 ],
+                'login' => true
             ],
 
             
@@ -172,24 +177,14 @@ class RoutesAplication implements  Routes {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
             'admin/list-contactos' => [
                 'GET' => [
                     'controller' => $homeController,
                     'action' => 'listContactos'
                 ],
-            ]
+                'login' => true
+            ],
+
             
        ];
     }
