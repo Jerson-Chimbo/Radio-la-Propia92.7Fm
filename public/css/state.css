@@ -29,6 +29,7 @@
 .transmicion > div> h2{
 	animation: traslado 10s infinite linear;
 }
+
 .header-in>a:hover{
 	background-color: var(--color-principal);
 	transform: scale(1.1);
@@ -58,7 +59,19 @@
 	}
 }
 
-
+@media screen and (max-width: 450px) {
+	@keyframes traslado {
+		0%{
+			transform: translateX(-10rem) scale(1.1);
+		}
+		50%{
+			transform: translateX(5rem) scale(0.9);
+		}
+		100%{
+			transform: translateX(55rem)scale(0.9);
+		}
+	}
+}
 
 .nav-footer>div>a:hover{
 	color: var(--color-terciario);

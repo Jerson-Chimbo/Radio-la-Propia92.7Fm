@@ -63,6 +63,7 @@ body , html{
     font-size: 1.4rem;
     font-family: hidden;
     color: var(--color-terciario);
+    
 }
 .header-in{
     display: flex;
@@ -80,6 +81,22 @@ body , html{
     font-weight: bold;
     font-size: 1.4rem;
 }
+
+@media screen and (max-width:1076px) {
+    .header-in{
+        flex-wrap: wrap;
+    }
+    .header-in>a{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .slogan{
+       display: none;
+    }
+}
+
 a{
     text-decoration: none;
 }
@@ -111,6 +128,12 @@ z-index: -10;
 .redes  img{
     width: 50px;
     height: 50px;
+}
+@media screen and (max-width:480px) {
+    .redes img{
+        width: 35px;
+        height: 35px;
+    }
 }
 .main{
     flex-grow: 1;
@@ -228,6 +251,15 @@ margin-top: 1rem;
     font-size: 1.5rem;
 }
 
+@media screen and (max-width:480px) {
+    .audio-title{
+        font-size: 1.1rem;
+    }
+    .reproductor{
+        height: 60vh;
+    }
+}
+
 .noticias{
     width: 80%;
     margin: 3rem auto 2rem auto;
@@ -271,6 +303,8 @@ margin-top: 1rem;
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
     padding: var(--padding-2);
 }
+
+
 
 .noticias>article> img{
     width: 100%;
@@ -320,6 +354,19 @@ margin-top: 1rem;
     width: 100%;
     grid-area: par;
 }
+@media screen and (max-width:1050px) {
+    .noticias{
+        width: 98%;
+    }
+    .noticias > h2{
+        width: 90%;
+    }
+    .noticias > article{
+        grid-template-areas: "titles titles"
+                         "imge imge"
+                         "par par";
+    }
+}
 .footer{
     width: 100%;
     margin: auto;
@@ -363,6 +410,38 @@ margin-top: 1rem;
 }
 .nav-footer > div >a{
     color: black;
+}
+@media screen and (max-width:480px) {
+    .header-in{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .header-in>a{
+        width: 80%;
+    }
+    .logo >a > img {
+        width: 120px;
+    }
+    
+    .footer-sup{
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+        
+    }
+    .footer-sup > div.uno{
+        width: 92%;
+    }
+    .nav-footer{
+        flex-direction: row;
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+    .noticias > article> h2{
+        font-size: 1.1rem;
+    }
 }
 .cuadrado-ul{
     width: 20%;
