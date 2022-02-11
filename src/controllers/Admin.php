@@ -239,4 +239,35 @@ class Admin{
         file_put_contents('./models/servicios/servicios.json',json_encode($array));
         header('location:/admin/lista/servicios');
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public function saveGaleria(){
+        $datos = file_get_contents('./models/servicios/direccion_imgs.json');
+        $array = json_decode($datos,true);
+        $patch = './public/asset/img/galery/';
+        $nombreArchivo = $patch.$_FILES['foto']['name'];
+        $archivoTem = $_FILES['foto']['tmp_name'];
+        array_push($array['imgs'],ltrim($nombreArchivo,'./'));
+        move_uploaded_file($archivoTem,$nombreArchivo);
+
+    }
 }

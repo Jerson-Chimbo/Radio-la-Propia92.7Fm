@@ -50,6 +50,12 @@
                 </p>
             </div>
         </div>
+
+        <div class="imagenes-servicios">
+            <?php foreach($fotos as $foto):?>
+                    <img class="imagenes-galeria" src="/<?= $foto?> " alt="">
+            <?php endforeach ?>
+        </div>
      
     </section>
 

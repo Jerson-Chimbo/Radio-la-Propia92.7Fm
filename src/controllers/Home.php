@@ -17,9 +17,14 @@ class Home{
         ];
     }
     public function quienesSomos(){
+        $datos = file_get_contents('./models/servicios/direccion_imgs.json');
+        $array = json_decode($datos,true)['imgs'];
         return[
             'title' => 'Quienes Somos',
             'template' => 'client/quienesSomos.html.php',
+            'variables' => [
+                'fotos' => $array
+            ]
             
         ]; 
     }
