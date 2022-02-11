@@ -18,10 +18,12 @@
             </div>
             <?php if(isset($_SESSION['admin'])): ?>
             <nav class="header-in">
-                <div class="cuadrado"> <a href="/admin/add/noticias"> Inresar Noticias </a></div>
-                <div class="cuadrado"> <a href="/admin/list/noticias"> Opciones de Noticias </a></div>
-                <div class="cuadrado"> <a href="/admin/add/servicios">Servicios</a></div>
-                <div class="cuadrado-ul"> <a href="/admin/add/servicios">Salir</a></div>
+            <a href="/admin/add/noticias"> <div class="cuadrado">  Inresar Noticias </div></a>
+            <a href="/admin/list/noticias"> <div class="cuadrado">  Opciones de Noticias </div></a>
+            <a href="/admin/add/servicios"> <div class="cuadrado"> Ingresar Servicios</div></a>
+            <a href="/admin/lista/servicios"> <div class="cuadrado"> Opciones Servicios</div></a>
+            <a href="/admin/list-contactos">  <div class="cuadrado"> Contactos Pendientes</div></a>
+            <a href="/salir">  <div class="cuadrado"> Salir</div></a>
                 
             </nav>
         </div>
@@ -37,11 +39,11 @@
                         siguiendo de cerca todas el deporte ecuatoriano. 
                         Llevamos 36 años junto a ti siendo la radio líder en sintonía.</div>
                     <div class="nav-footer">
-                        <div><a href=""> Inicio </a></div>
-                        <div><a href=""> Quienes Somos </a></div>
-                        <div><a href=""> Programación</a> </div>
-                        <div><a href=""> Serviciós </a></div>
-                        <div><a href=""> Contactanos </a> </div>
+                        <div><a href="/"> Inicio </a></div>
+                        <div><a href="/quienes-somos"> Quienes Somos </a></div>
+                        <div><a href="/programacion"> Programación</a> </div>
+                        <div><a href="/servicios"> Serviciós </a></div>
+                        <div><a href="/contactos"> Contactanos </a> </div>
                     </div>
                     <div ><h3>Redes Sociales</h3>
                         <div class="redes-sociales redes">
