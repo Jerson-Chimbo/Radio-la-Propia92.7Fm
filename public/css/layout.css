@@ -70,7 +70,8 @@ body , html{
     width: 100%;
     gap: 1rem;
 }
-.cuadrado{
+.header-in>a{
+    color: white;
     width: 20%;
     height: 4rem;
     line-height: 4rem;
@@ -82,19 +83,17 @@ body , html{
 a{
     text-decoration: none;
 }
-.cuadrado:nth-child(2n){
+.header-in>a:nth-child(2n){
    background-color: var(--color-terciario);
 }
-.cuadrado:nth-child(2n-1){
+.header-in>a:nth-child(2n-1){
     background-color: var(--color-secundario);
 }
-.cuadrado:last-child{
+.header-in>a:last-child{
     position: relative;
 }
-.cuadrado>a{
-    color: white;
-}
-.cuadrado:last-child::before{
+
+.header-in>a:last-child::before{
 content: "";
 width: 4rem;
 height: 100%;
@@ -836,4 +835,7 @@ align-items: center;
 .formularioc> form > textarea{
     width: 90%;
     min-height: 10rem;
+}
+.block{
+    display: block;
 }

@@ -29,15 +29,15 @@
 .transmicion > div> h2{
 	animation: traslado 10s infinite linear;
 }
-.cuadrado:hover{
+.header-in>a:hover{
 	background-color: var(--color-principal);
 	transform: scale(1.1);
 }
-.cuadrado-ul:hover{
+.header-in>a:hover{
 	background-color: var(--color-principal);
 	transform: scale(1.1);
 }
-.cuadrado:last-child:hover::before{
+.header-in>a:last-child:hover::before{
 	background-color: var(--color-principal);
 }
 @keyframes traslado {

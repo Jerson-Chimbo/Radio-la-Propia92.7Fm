@@ -117,12 +117,64 @@ class RoutesAplication implements  Routes {
                     'action'     => 'saveContactos'
                 ]
             ],
+            'admin/lista/servicios'=>[
+                'GET' => [
+                    'controller' => $adminController,
+                    'action' => 'listServicios'
+                ],
+                'POST' => [
+                    'controller' => $adminController,
+                    'action' => 'deleteServicios'
+                ],
+            ],
+            'admin/edit/servicios'=>[
+                'GET' => [
+                    'controller' => $adminController,
+                    'action' => 'editServicios'
+                ],
+                'POST' => [
+                    'controller' => $adminController,
+                    'action' => 'saveEditServicios'
+                ],
+            ],
+
             'salir' => [
                 'GET' => [
                     'controller' => $loginController,
                     'action' => 'logOut'
                 ],
             ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            'admin/list-contactos' => [
+                'GET' => [
+                    'controller' => $homeController,
+                    'action' => 'listContactos'
+                ],
+            ]
             
        ];
     }
