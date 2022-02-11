@@ -1,4 +1,4 @@
-<div class="list-noticias block">
+<div class="list-noticias block servicios">
     <h2>Las siguientes personas desean comunicarse con tigo</h2>
     <table>
         <thead>
@@ -16,12 +16,12 @@
         
     <?php foreach($contactos as $contacto): ?>
         <tr>
-            <td> <?= $contacto->nombre ?? ''  ?> </td>
-            <td> <?= $contacto->apellido ?? ''  ?> </td>
-            <td> <?= $contacto->telefono ?? ''  ?> </td>
-            <td> <?= $contacto->direccion ?? ''  ?> </td>
+            <td> <?= $contacto->nombre ?? 'no ha registrado este dato'  ?> </td>
+            <td> <?= $contacto->apellido ?? 'no ha registrado este dato'  ?> </td>
+            <td> <?= $contacto->telefono ?? 'no ha registrado este dato'  ?> </td>
+            <td> <?= $contacto->direccion ?? 'no ha registrado este dato'  ?> </td>
             <td> <?= $contacto->email ?? ''  ?> </td>
-            <td>  <?= $contacto->descripcion ?? ''  ?> </td>            
+            <td>  <?= $contacto->descripcion ?? 'no ha registrado este dato'  ?> </td>            
         </tr>
          <?php endforeach; ?>
     </tbody>

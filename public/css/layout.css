@@ -378,7 +378,7 @@ margin-top: 1rem;
 
 
 .formulario{
-    width: 40%;
+    width: 60%;
     margin: 2rem auto;
     min-height: 15rem;
 }
@@ -841,7 +841,7 @@ align-items: center;
     display: block;
 }
 .block > table{
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
 }
 
@@ -857,4 +857,26 @@ align-items: center;
     width: 18.5%;
     min-height: 4rem;
     padding: var(--padding-1);
+}
+
+.admin a{
+    font-size: 0.8rem;
+}
+.error{
+    width: 100%;
+    background-color: rgba(255, 0, 0,0.5);
+    color: white;
+    margin: auto;
+    padding: var(--padding-1);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.correcto{
+    width: 100%;
+    background-color: rgba(0, 0, 255,0.5);
+    color: white;
+    margin: auto;
+    padding: var(--padding);
+    text-align: center;
+    margin-bottom: 1rem;
 }

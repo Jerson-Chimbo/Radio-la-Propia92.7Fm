@@ -17,7 +17,7 @@
                 </div>
             </div>
             <?php if(isset($_SESSION['admin'])): ?>
-            <nav class="header-in">
+            <nav class="header-in admin">
             <a href="/admin/add/noticias"> <div class="cuadrado">  Inresar Noticias </div></a>
             <a href="/admin/list/noticias"> <div class="cuadrado">  Opciones de Noticias </div></a>
             <a href="/admin/add/servicios"> <div class="cuadrado"> Ingresar Servicios</div></a>
