@@ -57,7 +57,7 @@ class RoutesAplication implements  Routes {
                     'controller' => $adminController,
                     'action' => 'saveNoticias'
                 ],
-                //'login' => true
+                'login' => true
             ],
             'admin/list/noticias' => [
                 'GET' => [
@@ -68,6 +68,7 @@ class RoutesAplication implements  Routes {
                     'controller' => $adminController,
                     'action' => 'deleteNoticias'
                 ],
+                'login' => true
             ],
             'admin/edit/noticias'=> [
                 'GET' => [
