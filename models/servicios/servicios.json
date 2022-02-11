@@ -1,0 +1,13 @@
+{
+    "servicios": [
+        {
+            "nombre": "Estructura de Datos",
+            "precio": "1231",
+            "horas": "231",
+            "requisitos": "cedula,papeleta",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. sum temporibus optio?",
+            "imagen1": "public\/asset\/img\/primera.jfif",
+            "imagen2": "public\/asset\/img\/guardia.jfif"
+        }
+    ]
+}

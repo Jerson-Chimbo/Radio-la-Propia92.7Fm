@@ -131,4 +131,40 @@ class Admin{
         file_put_contents('./models/noticias/noticias.json',json_encode($array));
         header('location:/admin/list/noticias');
     }
+
+    public function addServicios(){
+        return [
+            'title' => 'Ingresar Servicios',
+            'template' => 'admin/addServicios.html.php',
+            'administrador' => true
+        ];
+    }
+
+    public function saveServicios(){
+        $noticias = file_get_contents('./models/servicios/servicios.json');
+        $array = json_decode($noticias,true);
+        $patch = './public/asset/img/servicios/';
+        $archivo1 = $patch.$_FILES['imagen1']['name'];
+        $archivo2 = $patch.$_FILES['imagen2']['name'];
+        $archivo1Tem = $_FILES['imagen1']['tmp_name'];
+        $archivo2Tem = $_FILES['imagen2']['tmp_name'];
+
+        move_uploaded_file($archivo1Tem,$archivo1);
+        move_uploaded_file($archivo2Tem,$archivo2);
+        
+        $array['servicios'][] =[
+            'nombre' => $_POST['nombre'],
+            'precio' => $_POST['precio'],
+            'horas' => $_POST['horas'],
+            'requisitos' => $_POST['requisitos'],
+            'descripcion' => $_POST['descripcion'],
+            'imagen1' => ltrim($archivo1,'./'),
+            'imagen2' => ltrim($archivo2,'./')
+        ];
+
+        file_put_contents('./models/servicios/servicios.json',json_encode($array));
+
+        header('location:/');
+        
+    }
 }

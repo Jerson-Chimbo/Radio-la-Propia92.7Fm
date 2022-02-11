@@ -4,6 +4,7 @@ namespace aplication;
 use controllers\Admin;
 use controllers\Home;
 use controllers\Login;
+use controllers\Servicios;
 use frame\Autentification;
 use frame\Routes;
 use models\Login as ModelsLogin;
@@ -25,6 +26,7 @@ class RoutesAplication implements  Routes {
         $homeController = new Home;
         $adminController = new Admin($this->loginModesl);
         $loginController = new Login($this->loginModesl,$this->autentificaction);
+        $serviciosController = new Servicios;
        return [
            '' => [
                'GET' => [
@@ -71,6 +73,22 @@ class RoutesAplication implements  Routes {
                 'POST' => [
                     'controller' => $adminController,
                     'action' => 'saveEditNoticias'
+                ],
+            ],
+            'admin/add/servicios' => [
+                'GET' => [
+                    'controller' => $adminController,
+                    'action' => 'addServicios'
+                ],
+                'POST' => [
+                    'controller' => $adminController,
+                    'action' => 'saveServicios'
+                ],
+            ],
+            'servicios' => [
+                'GET' => [
+                    'controller' => $serviciosController,
+                    'action' => 'listServicios'
                 ],
             ],
             'salir' => [

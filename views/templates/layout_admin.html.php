@@ -20,7 +20,7 @@
             <nav class="header-in">
                 <div class="cuadrado"> <a href="/admin/add/noticias"> Inresar Noticias </a></div>
                 <div class="cuadrado"> <a href="/admin/list/noticias"> Opciones de Noticias </a></div>
-                <div class="cuadrado-ul"> <a href=""> Ingresar los Servicios</a></div>
+                <div class="cuadrado-ul"> <a href="/admin/add/servicios"> Ingresar los Servicios</a></div>
             </nav>
         </div>
         <?php endif; ?>

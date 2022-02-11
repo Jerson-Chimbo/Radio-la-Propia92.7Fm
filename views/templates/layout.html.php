@@ -25,7 +25,7 @@
                 <div class="cuadrado"> <a href=""> Inicio </a></div>
                 <div class="cuadrado"> <a href=""> Quienes Somos</a></div>
                 <div class="cuadrado"> <a href=""> Programación</a></div>
-                <div class="cuadrado"> <a href=""> Serviciós</a></div>
+                <div class="cuadrado"> <a href="/servicios"> Serviciós</a></div>
                 <div class="cuadrado ultimo"> <a href=""> Contactanos</a></div>
             </nav>
         </div>
