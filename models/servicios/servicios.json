@@ -1,13 +1,1 @@
-{
-    "servicios": [
-        {
-            "nombre": "Estructura de Datos",
-            "precio": "1231",
-            "horas": "231",
-            "requisitos": "cedula,papeleta",
-            "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. sum temporibus optio?",
-            "imagen1": "public\/asset\/img\/primera.jfif",
-            "imagen2": "public\/asset\/img\/guardia.jfif"
-        }
-    ]
-}
+{"servicios":[{"nombre":"Estructura de Datos","precio":"1231","horas":"231","requisitos":"cedula,papeleta","descripcion":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. sum temporibus optio?","imagen1":"public\/asset\/img\/primera.jfif","imagen2":"public\/asset\/img\/guardia.jfif"},{"nombre":"Guardias de Seguridad","precio":"400","horas":"250","requisitos":"cedula,matricula,titulo de bachiller,carnet de vacuna","descripcion":"Inspecciona, vigila y realiza rondas, verificando el cumplimiento de las condiciones de seguridad de la instituci\u00f3n.\r\nEfect\u00faa rondas en el recinto de la Instituci\u00f3n cubriendo las \u00e1reas asignadas, para prevenir y detectar robos, incendios, mal uso de equipos o instalaciones en general.","imagen1":"public\/asset\/img\/servicios\/1.webp","imagen2":"public\/asset\/img\/servicios\/2.webp"}]}

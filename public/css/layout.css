@@ -684,7 +684,6 @@ article#main-principal{
     width: 100%;
     margin-top: 2rem;
     height: 3rem;
-
     
 }
 .imagenes-servicios{
@@ -695,15 +694,16 @@ article#main-principal{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.1rem;
+    gap: 1rem;
     margin-top: 2rem;
     box-shadow: var(--box-shadow);
 
 }
+/* estilo para redimensionar las imagenes de servicios */
 .imagenes-servicios img{
     
     width: 45%;
-    height: 700px;
+    height: 600px;
 
 }
 
@@ -732,6 +732,7 @@ article#main-principal{
     box-shadow: var(--box-shadow);
     min-height: 5rem;
     padding: var(--padding-2);
+    text-align: justify;
 }
 .servicios-descr > div >div{
     box-shadow: var(--box-shadow);
@@ -742,6 +743,8 @@ article#main-principal{
 .item-servicios > span{
     box-shadow: var(--box-shadow);
     padding: var(--padding-2);
+    background-color: var(--color-secundario);
+    color: white;
 }
 .servicos > h2{
     background-image: linear-gradient(45deg,var(--color-secundario),var(--color-terciario));
