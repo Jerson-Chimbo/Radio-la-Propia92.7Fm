@@ -27,6 +27,7 @@ class RoutesAplication implements  Routes {
         $adminController = new Admin($this->loginModesl);
         $loginController = new Login($this->loginModesl,$this->autentificaction);
         $serviciosController = new Servicios;
+
        return [
            '' => [
                'GET' => [
@@ -91,14 +92,34 @@ class RoutesAplication implements  Routes {
                     'action' => 'listServicios'
                 ],
             ],
+            'quienes-somos' => [
+                'GET' => [
+                    'controller' => $homeController,
+                    'action' => 'quienesSomos'
+                ],
+            ],
+            'programacion' => [
+                'GET' => [
+                    'controller' => $homeController,
+                    'action' => 'programacion'
+                ],
+            ],
+            'contactos' => [
+                'GET' => [
+                    'controller' => $homeController,
+                    'action' => 'contactos'
+                ],
+            ],
             'salir' => [
                 'GET' => [
                     'controller' => $loginController,
                     'action' => 'logOut'
                 ],
-            ]
+            ],
+            
        ];
     }
+
 
     public function getAutentification(): Autentification
     {

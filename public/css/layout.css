@@ -236,7 +236,6 @@ margin-top: 1rem;
 }
 
 .noticias>h2{
-    text-align: center;
     margin-bottom: 3rem;
     text-align: center;
     color: #ffffffff;
@@ -269,13 +268,16 @@ margin-top: 1rem;
     gap: 0.5rem;
     height: 100%;
     margin-bottom: 2rem;
+    border: 1.5px solid var(--color-principal);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    padding: var(--padding-2);
 }
 
 .noticias>article> img{
     width: 100%;
     height: 250px;
     display: block;
-    background-color: #ccc;
+    background-color: white;
     /* grid-column: columna1;
     grid-row: fila1/fila2; */
     grid-area: imge;
@@ -286,21 +288,29 @@ margin-top: 1rem;
     grid-row: fila1; */
     justify-self: center;
     align-self: center;
-    width: 20rem;
+    width: 100%;
     height: 50px;
-    background-color: #ccc;
+    background-color: var(--color-terciario);
     grid-area: titles;
     margin: 0;
     padding: 0;
+    border-radius:1rem;
+    text-align: center;
+    line-height:50px;
+    color:white;
 }
 .noticias > article > div{
     background-color: #ccc;
+}
+.noticias > article > p{
+    background-color: white;
     width: 100%;
     /* grid-column: columna2/fin-columna;
     grid-row: fila2/fin-fila; */
     grid-area: par;
     margin: 0;
     padding: 0;
+    text-align: justify;
 }
 
 .footer{
@@ -331,10 +341,12 @@ margin-top: 1rem;
 .footer-inf{
     margin-top: 2rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     font-weight: bold;
     background-color: var(--color-secundario);
+    height:5rem;
+    line-height:5rem;
 }
 .nav-footer > div >a{
     color: black;
@@ -441,7 +453,180 @@ margin-top: 1rem;
     border-radius: 1rem;
 }
 
+/* Estilos para el menu de quienes somos */
+/* Estilos para el lateral*/
+aside#lateral{
+    float: right;
+    width: 25%;
+    margin-top: 10px;
+}
+.secundario{
+    padding: 15px;
+    background-image: linear-gradient(45deg , var(--color-secundario),var(--color-terciario));
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.secundario ul {
+    list-style: none;
+    padding: 10px;
+}
+article#main-principal>h1{
+    text-align: center;
+    text-align: center;
+    color: #ffffffff;
+    padding: var(--padding-1);
+    font-size: 1.8rem;
+    width: 100%;
+    height: 10vh;
+    line-height:10vh;
+    background-image: linear-gradient(45deg , var(--color-terciario),var(--color-secundario));
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    font-weight: bold;
+    justify-content:center;
 
+}    
+article#main-principal>p{
+   text-align: justify;
+   padding: 10px;  
+    font-size: 18px;
+    width: 100%;
+    height: 20%;
+    line-height:5vh;
+    background-color: white;
+    box-shadow: var(--box-shadow);  
+}    
+.secundario>p{
+    text-align: justify;
+}
+.secundario ul li  {
+    padding: 10px;
+}
+article#main-principal>img{
+    width: 100%;
+    height: 45%;
+    display: block;
+    background-color: white;
+    grid-area: imge;
+}
+#main{
+    width: 80%;
+    margin: auto;
+}
+/*estilos para el main principal*/
+article#main-principal{
+    float: left;
+    width: 65%;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    
+} 
+/* Estilos para el menu de quienes somos-porque elegirnos */
+.contenedor1{
+    width: 100%;
+    margin-top:5rem;
+    height: auto;
+    clear: both;
+    margin-top: 20px;
+    transition-property: all;
+}
+.contenedor1>h3{
+    text-align: center;
+    color: #ffffffff;
+    padding: var(--padding-1);
+    font-size: 1.8rem;
+    width: 100%;
+    height: 10vh;
+    line-height:10vh;
+    background-image: linear-gradient(45deg , var(--color-terciario),var(--color-secundario));
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    font-weight: bold;
+    justify-content:center;
+
+}
+
+.caja{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+
+}
+.caja img{
+    width: 290px;
+    height: 290px;
+    border-radius: 1rem;
+}
+
+.caja p{
+    list-style: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    /* background-image: linear-gradient(45deg , var(--color-terciario),var(--color-secundario)); */
+    background-color: var(--color-terciario);
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+}
+ 
+/* Estilos para el menu de Programadores */
+.contenedor2{
+    width: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    margin:auto;
+    gap: 1rem;
+
+}
+.contenedor2>article{
+    
+    width: 45%;
+    background-color: white;
+    border-bottom:5px;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+    border-radius: 2rem;
+}
+.contenedor2>article>h2{
+    text-align: center;
+    font-size: 1.4rem;
+}
+.contenedor2>article>section>div{
+    text-align: center;
+}
+.transmicion>h2{
+    text-align: center;
+    color: #ffffffff;
+    padding: var(--padding-1);
+    font-size: 1.8rem;
+    width: 100%;
+    height: 10vh;
+    line-height:10vh;
+    background-image: linear-gradient(45deg , var(--color-terciario),var(--color-secundario));
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+    font-weight: bold;
+    justify-content:center;
+}
+.transmicion>h3{
+    text-align: center;
+    color: #ffffffff;
+    padding: var(--padding-1);
+    font-size: 1.8rem;
+    width: 100%;
+    height: 10vh;
+    line-height:10vh;
+    background-color: var(--color-terciario);
+    border-radius: 5rem;
+    font-weight: bold;
+    justify-content:center;
+}
 
 .list-noticias{
     width: 50%;
@@ -570,4 +755,28 @@ margin-top: 1rem;
     text-align: center;
     padding: var(--padding-2);
     color: white;
+}
+.redes1>li{
+list-style: none;
+display: inline-flex;
+flex-direction: row;
+justify-content: space-evenly;
+margin-bottom:0.8rem;
+align-items: center;
+}
+.redes1 >li> img{
+    width: 45px;
+    height:45px;
+    margin-right: 10px;
+}
+.mapa{
+    width: 100%;
+    height: 75vh;
+}
+.mapa>iframe{
+    width: 100%;
+    height: inherit;
+}
+.conten-map{
+    clear: both;
 }

@@ -1,6 +1,6 @@
 <?php
 use aplication\Utiles;
 
-define('DBNAME','sac');
-define('USER','postgres');
-define('PASSWORD', 'barcelona');
+define('DBNAME','radio-la-propia92.7fm');
+define('USER','root');
+define('PASSWORD', 'barcelona2012');

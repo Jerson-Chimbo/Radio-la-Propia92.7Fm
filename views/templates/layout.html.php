@@ -22,11 +22,11 @@
                 </div>
             </div>
             <nav class="header-in">
-                <div class="cuadrado"> <a href=""> Inicio </a></div>
-                <div class="cuadrado"> <a href=""> Quienes Somos</a></div>
-                <div class="cuadrado"> <a href=""> Programación</a></div>
+                <div class="cuadrado"> <a href="/"> Inicio </a></div>
+                <div class="cuadrado"> <a href="/quienes-somos"> Quienes Somos</a></div>
+                <div class="cuadrado"> <a href="/programacion"> Programación</a></div>
                 <div class="cuadrado"> <a href="/servicios"> Serviciós</a></div>
-                <div class="cuadrado ultimo"> <a href=""> Contactanos</a></div>
+                <div class="cuadrado ultimo"> <a href="/contactos"> Contactos</a></div>
             </nav>
         </div>
         <main class="main">
@@ -40,11 +40,11 @@
                         siguiendo de cerca todas el deporte ecuatoriano. 
                         Llevamos 36 años junto a ti siendo la radio líder en sintonía.</div>
                     <div class="nav-footer">
-                        <div><a href=""> Inicio </a></div>
-                        <div><a href=""> Quienes Somos </a></div>
-                        <div><a href=""> Programación</a> </div>
-                        <div><a href=""> Serviciós </a></div>
-                        <div><a href=""> Contactanos </a> </div>
+                        <div><a href="/"> Inicio </a></div>
+                        <div><a href="/quienes-somos"> Quienes Somos </a></div>
+                        <div><a href="/programacion"> Programación</a> </div>
+                        <div><a href="/servicios"> Serviciós </a></div>
+                        <div><a href="/contactos"> Contactos </a> </div>
                     </div>
                     <div ><h3>Redes Sociales</h3>
                         <div class="redes-sociales redes">
