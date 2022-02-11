@@ -1,8 +1,14 @@
 <?php 
 namespace controllers;
 
-class Home{
+use models\Contactos;
 
+class Home{
+private $contactosTable;
+   public function __construct (Contactos $contactosTable) {
+       $this->contactosTable = $contactosTable;
+
+   }
 
     public function home(){
         $datos_json = file_get_contents('./models/noticias/noticias.json');
@@ -34,6 +40,27 @@ class Home{
         return[
             'title' => 'Contactos',
             'template' => 'client/contactos.html.php',
+   
+        ]; 
+    }
+
+    public function saveContactos(){
+        $dataContactos=array(
+            'nombre'=> $_POST['nombre'],
+            'apellido'=> $_POST['apellido'],
+            'email'=> $_POST['email'],
+            'telefono'=> $_POST['telefono'],
+            'direccion' => $_POST['direccion'],
+            'descripcion' => $_POST['descripcion']
+        );
+    
+        $this->contactosTable->insert($dataContactos);
+        return[
+            'title' => 'Contactos',
+            'template' => 'client/contactos.html.php',
+            'variables' =>[
+                'correcto' => "Se ingreso correctamente esos datos"
+            ]
    
         ]; 
     }

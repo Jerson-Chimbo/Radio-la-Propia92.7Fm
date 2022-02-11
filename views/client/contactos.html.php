@@ -9,6 +9,14 @@
             <p>Puedes ponerte en contacto con nosotros a travez de este formulario. Pronto un asesor de Radio la Propia 92.7FM se contactara contigo para brindarte una mejor atencion.</p>
 
        <div class="formularioc">
+           <?php
+             if(isset($correcto)): 
+             
+             ?>
+            <div class="correcto">
+                <?= $correcto; ?>
+            </div>
+            <?php endif;?>
             <form action="" method="post">
                   <label>Nombre:</label>
                   <input type="text" name="nombre" placeholder="Ingresa tu nombre"> 
@@ -19,10 +27,13 @@
                     <input type="text" name="email" placeholder="Ingresa tu correo"> <br>  
                   
                     <label>Telefono-Celular:</label>
-                    <input type="tel" name="Telefono" placeholder="Ingresa tu numero celular">  <br> 
+                    <input type="tel" name="telefono" placeholder="Ingresa tu numero celular">  <br> 
+
+                    <label>Direccion:</label>
+                    <input type="text" name="direccion" placeholder="Ingresa tu direccion"> <br>
 
                     <label>Descripcion:</label>
-                    <textarea></textarea> <br>
+                    <textarea name="descripcion"></textarea> <br>
                     <button type="submit">Enviar</button>
                   </form>
             </div>  
@@ -32,10 +43,13 @@
             <div class="secundario">
                 <h3>Encuentranos en Guaranda:</h3>
                 <div class="redes1">
-                    <li><img src="/public/asset/img/ubicacion.png" alt=""> <span>Av. Monseñor Candido Rada y 23 de Abril (Junto a las Canchas del Barrio Bellavista</span></li>
-                    <li><img src="/public/asset/img/telefono.png" alt="telefono"><span>(03) 298-4126 </span></li>
-                    <li><img src="/public/asset/img/celular.png" alt=""><span>0997810792 </span></li>
-                    <li> <img src="/public/asset/img/gmail.png" alt="gmail"><span>lapropia927@gmail.com</span></li>
+                    <li><a href="https://goo.gl/maps/VSpHem8jBjU71aHh6" target="_blank"><img src="/public/asset/img/ubicacion.png" alt=""></a><span>Av. Monseñor Candido Rada y 23 de Abril (Junto a las Canchas del Barrio Bellavista</span></li>
+
+                    <li><a href="tel:(03) 298-4126" target="_blank"><img src="/public/asset/img/telefono.png" alt="telefono"></a><span>(03) 298-4126 </span></li>
+
+                    <li><a href="https://wa.link/9b616r" target="_blank"><img src="/public/asset/img/what.jfif" alt="WhatSapp"></a><span>0997810792</span></li>
+
+                    <li><a href="mailto:lapropia927@gmail.com"><img src="/public/asset/img/gmail.png" alt="gmail"></a><span>lapropia927@gmail.com</span></li>
                 </div>
             </div>
 

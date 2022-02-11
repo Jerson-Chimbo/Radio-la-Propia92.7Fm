@@ -7,6 +7,7 @@ use controllers\Login;
 use controllers\Servicios;
 use frame\Autentification;
 use frame\Routes;
+use models\Contactos;
 use models\Login as ModelsLogin;
 
 class RoutesAplication implements  Routes {
@@ -14,16 +15,18 @@ class RoutesAplication implements  Routes {
     
     private $autentificaction;
     private $loginModesl;
+    private $contactosTable;
 
     public function __construct()
     {   $this->loginModesl = new ModelsLogin;
         $this->autentificaction= new Autentification($this->loginModesl,'cedula','clave');
+        $this->contactosTable = new Contactos();
 
     }
 
     function getRoutesAplication(): array
     {
-        $homeController = new Home;
+        $homeController = new Home($this->contactosTable);
         $adminController = new Admin($this->loginModesl);
         $loginController = new Login($this->loginModesl,$this->autentificaction);
         $serviciosController = new Servicios;
@@ -109,6 +112,10 @@ class RoutesAplication implements  Routes {
                     'controller' => $homeController,
                     'action' => 'contactos'
                 ],
+                'POST' => [
+                    'controller' => $homeController,
+                    'action'     => 'saveContactos'
+                ]
             ],
             'salir' => [
                 'GET' => [

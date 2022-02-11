@@ -16,10 +16,10 @@
                     <span class="slogan">La radio mas grande del planeta</span>
                 </div>
                 <div class="redes">
-                    <img src="/public/asset/img/facebook.jfif" alt="facebook">
-                    <img src="/public/asset/img/instagram.jfif" alt="instagram">
+                <a href="https://www.facebook.com/lapropiafm927/about/?ref=page_internal" target="_blank"><img src="/public/asset/img/facebook.jfif" alt="facebook"></a>
+                    <a href="https://instagram.com/lapropiafm?utm_medium=copy_link" target="_blank"><img src="/public/asset/img/instagram.jfif" alt="instagram"></a>
                     <a href="https://wa.link/9b616r" target="_blank"><img src="/public/asset/img/what.jfif" alt="WhatSapp"></a>
-                    <!-- <a href="mailto:dorian9armijos@gmail.com">Email</a> -->
+                    
                 </div>
             </div>
             <nav class="header-in">
@@ -48,10 +48,9 @@
                         <div><a href="/contactos"> Contactos </a> </div>
                     </div>
                     <div ><h3>Redes Sociales</h3>
-                        <div class="redes-sociales redes">
-                        <img src="/public/asset/img/facebook.jfif" alt="facebook">
-                        <img src="/public/asset/img/instagram.jfif" alt="instagram">
-                        <img src="/public/asset/img/what.jfif" alt="WhatSapp">
+                    <a href="https://www.facebook.com/lapropiafm927/about/?ref=page_internal" target="_blank"><img src="/public/asset/img/facebook.jfif" alt="facebook"></a>
+                    <a href="https://instagram.com/lapropiafm?utm_medium=copy_link" target="_blank"><img src="/public/asset/img/instagram.jfif" alt="instagram"></a>
+                    <a href="https://wa.link/9b616r" target="_blank"><img src="/public/asset/img/what.jfif" alt="WhatSapp"></a>
                         </div>
                         
                 </div>
