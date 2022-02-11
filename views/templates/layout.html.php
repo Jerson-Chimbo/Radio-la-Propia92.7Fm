@@ -26,7 +26,7 @@
                 <div class="cuadrado"> <a href="/quienes-somos"> Quienes Somos</a></div>
                 <div class="cuadrado"> <a href="/programacion"> Programación</a></div>
                 <div class="cuadrado"> <a href=""> Serviciós</a></div>
-                <div class="cuadrado ultimo"> <a href=""> Contactanos</a></div>
+                <div class="cuadrado ultimo"> <a href="/contactos"> Contactos</a></div>
             </nav>
         </div>
         <main class="main">
@@ -44,7 +44,7 @@
                         <div><a href="/quienes-somos"> Quienes Somos </a></div>
                         <div><a href="/programacion"> Programación</a> </div>
                         <div><a href=""> Serviciós </a></div>
-                        <div><a href=""> Contactanos </a> </div>
+                        <div><a href="/contactos"> Contactos </a> </div>
                     </div>
                     <div ><h3>Redes Sociales</h3>
                         <div class="redes-sociales redes">

@@ -30,6 +30,13 @@ class Home{
    
         ]; 
     }
+    public function contactos(){
+        return[
+            'title' => 'Contactos',
+            'template' => 'client/contactos.html.php',
+   
+        ]; 
+    }
 
     
 }

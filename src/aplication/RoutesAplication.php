@@ -66,6 +66,12 @@ class RoutesAplication implements  Routes {
                     'action' => 'programacion'
                 ],
             ],
+            'contactos' => [
+                'GET' => [
+                    'controller' => $homeController,
+                    'action' => 'contactos'
+                ],
+            ],
             'salir' => [
                 'GET' => [
                     'controller' => $loginController,
