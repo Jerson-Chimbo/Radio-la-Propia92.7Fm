@@ -57,3 +57,11 @@
 		transform: translateX(55rem)scale(0.9);
 	}
 }
+
+
+
+.nav-footer>div>a:hover{
+	color: var(--color-terciario);
+
+
+}

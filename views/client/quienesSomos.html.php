@@ -6,11 +6,16 @@
         <div class="contenedor"> 
             <article id="main-principal">
             <h1>NUESTRA MISION Y VISION</h1>
-            <p>Radio la Propia 92.7FM, en los proximos 5 años, radio "LA REVOLUCIONARIA 92.7FM" sera una radio emisora conformada por un equipo humano: capacitado en el área </p>
+            <p>Nuestra Misión, somos una radio emisora comercial, popular y comunitaria, bilingüe español y Kichwa, Democrática, Participativa, Intercultural Ecuménica y Pluralista, conformado por hombres y mujeres voluntarios que busca el bienestar común a traves del servicio de informacion, entretenimiento y educación que se brinda en nuestra programacion radial, facilitando a los grupos sociales mejorar sus capacidades y competencias para que sean actores de su propio desarrollo, protagonistas de la construcción de una nueva sociedad justa, solidaria, democrática y participativa.</p>
+            <p>Nuestra Visión, en los próximos 5 años, radio “La Revolucionaria 92.7FM” será una radio emisora conformada por un equipo humano: capacitado en el area de la comunicación popular que informa. Educa y entretiene a la colectividad, capaz de generar participación en la población y acompañar procesos comunitarios de transformación social, implementando tecnología moderna, donde se apliquen los principios fundamentales y la cosmovisión de los pueblos andinos, con incidencia ideológica, social y cultural de la población en general.
+Nuestra emisora será un centro de desarrollo comunitario, que funciona en “Guaranda” que involucra a todos los sectores activos de la población guarandeña y bolivarense en general.
+</p>
+
 
             <img src="/public/asset/img/quienes somos1.jpg" alt="">
             
         </article>
+
         <aside id="lateral">
             <div class="secundario">
                 <h3>NUESTROS VALORES</h3>
