@@ -266,7 +266,7 @@ margin-top: 1rem;
                          "imge par"
                          ". par";
     gap: 0.5rem;
-    height: 100%;
+    height: auto;
     margin-bottom: 2rem;
     border: 1.5px solid var(--color-principal);
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
@@ -299,10 +299,7 @@ margin-top: 1rem;
     line-height:50px;
     color:white;
 }
-.noticias > article > div{
-    background-color: #ccc;
-}
-.noticias > article > p{
+.noticias > article > div> p{
     background-color: white;
     width: 100%;
     /* grid-column: columna2/fin-columna;
@@ -312,7 +309,6 @@ margin-top: 1rem;
     padding: 0;
     text-align: justify;
 }
-
 .footer{
     width: 100%;
     margin: auto;
