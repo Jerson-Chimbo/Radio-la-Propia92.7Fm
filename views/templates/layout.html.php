@@ -18,7 +18,8 @@
                 <div class="redes">
                     <img src="/public/asset/img/facebook.jfif" alt="facebook">
                     <img src="/public/asset/img/instagram.jfif" alt="instagram">
-                    <img src="/public/asset/img/what.jfif" alt="WhatSapp">
+                    <a href="https://wa.link/9b616r" target="_blank"><img src="/public/asset/img/what.jfif" alt="WhatSapp"></a>
+                    <!-- <a href="mailto:dorian9armijos@gmail.com">Email</a> -->
                 </div>
             </div>
             <nav class="header-in">
