@@ -665,11 +665,12 @@ article#main-principal{
  
 /* Estilos para el menu de Programadores */
 .contenedor2{
-    width: 60%;
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
     margin:auto;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
 
 }
@@ -694,7 +695,7 @@ article#main-principal{
 }
 .contenedor2>article{
     
-    width: 45%;
+    width: 15rem;
     background-color: white;
     border-bottom:5px;
     padding: 10px;
@@ -1021,7 +1022,16 @@ textarea{
     .secundario{
         width: 90%;
     }
+    .reproductor > h2 .transmicion>h2{
+        font-size: 1.1rem;
+    }
     
+    .transmicion > h2{
+        font-size: 1.1rem;
+    }
+    .transmicion>h3{
+        font-size: 1.1rem;
+    }
     article#main-principal>img{
         width: 98%;
         margin: auto;
