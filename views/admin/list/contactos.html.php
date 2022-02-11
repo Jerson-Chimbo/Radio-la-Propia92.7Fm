@@ -7,7 +7,7 @@
             <p>Telefono: <?= $contacto->telefono  ?> </p>
             <p>Dirección: <?= $contacto->direccion  ?> </p>
             <p>Email: <?= $contacto->email  ?> </p>
-            <p>Interad(o/a) en: <?= $contacto->Descripción  ?> </p>            
+            <p>Interad(o/a) en: <?= $contacto->descripcion  ?> </p>            
         </blockquote>
     <?php endforeach; ?>
 </div>

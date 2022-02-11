@@ -138,6 +138,9 @@ class RoutesAplication implements  Routes {
                 ],
             ],
 
+            
+
+
             'salir' => [
                 'GET' => [
                     'controller' => $loginController,

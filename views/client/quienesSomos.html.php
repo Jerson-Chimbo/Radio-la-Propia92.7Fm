@@ -6,7 +6,7 @@
         <div class="contenedor"> 
             <article id="main-principal">
             <h1>NUESTRA MISION Y VISION</h1>
-            <p>Radio la Propia 97.7FM, es socialmente responsable, orientada nacional e internacionalmente hacia el cliente, reconocida por su excelencia en el campo de las comunicaciones radiales, creando valor agregado para nuestros clientes en la cobertura de sintonia para todo el mundo por medio de la prestación de servicios confiables, consistentes e innovadores, a tarifas razonables; con locutores altamente capacitados en las diversas áreas de comunicacion, cuidadosamente seleccionados; con el trato directo del cliente con nosotros y bajo nuestra responsabilidad.</p>
+            <p>Radio la Propia 92.7FM, en los proximos 5 años, radio "LA REVOLUCIONARIA 92.7FM" sera una radio emisora conformada por un equipo humano: capacitado en el área </p>
 
             <img src="/public/asset/img/quienes somos1.jpg" alt="">
             

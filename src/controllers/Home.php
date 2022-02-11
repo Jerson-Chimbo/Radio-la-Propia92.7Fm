@@ -97,12 +97,13 @@ private $contactosTable;
 
 
     public function listContactos(){
-
+        $dataContactos= $this->contactosTable->select();
         return [
             'title' => 'Lista de Contactos',
             'template' => 'admin/list/contactos.html.php',
+            'administrador'=>true,
             'variables' => [
-                'contactos' => ''
+                'contactos' => $dataContactos
             ]
         ];
     }
