@@ -18,11 +18,15 @@
             </div>
             <?php if(isset($_SESSION['admin'])): ?>
             <nav class="header-in admin">
-            <a href="/admin/add/noticias"> <div class="cuadrado">  Inresar Noticias </div></a>
+            <a href="/admin/add/noticias"> <div class="cuadrado">  Ingresar Noticias </div></a>
             <a href="/admin/list/noticias"> <div class="cuadrado">  Opciones de Noticias </div></a>
             <a href="/admin/add/servicios"> <div class="cuadrado"> Ingresar Servicios</div></a>
             <a href="/admin/lista/servicios"> <div class="cuadrado"> Opciones Servicios</div></a>
             <a href="/admin/list-contactos">  <div class="cuadrado"> Contactos Pendientes</div></a>
+            <a href="/admin/add/galeria">  <div class="cuadrado"> Ingresar Fotos</div></a>
+        
+            
+            
             <a href="/salir">  <div class="cuadrado"> Salir</div></a>
                 
             </nav>

@@ -1,5 +1,5 @@
-<div class="list-noticias block servicios">
-    <h2>Las siguientes personas desean comunicarse con tigo</h2>
+<div class="list-noticias block servicos">
+    <h2>Las siguientes personas desean comunicarse contigo</h2>
     <table>
         <thead>
             <tr>

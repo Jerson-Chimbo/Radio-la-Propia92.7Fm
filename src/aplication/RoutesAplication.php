@@ -138,6 +138,17 @@ class RoutesAplication implements  Routes {
                 ],
             ],
 
+            'admin/add/galeria' => [
+                'GET' => [
+                    'controller' => $adminController,
+                    'action' => 'addGaleria'
+                ],
+                'POST' => [
+                    'controller' => $adminController,
+                    'action' => 'saveGaleria'
+                ],
+            ],
+
             
 
 

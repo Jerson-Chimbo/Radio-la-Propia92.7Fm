@@ -2,7 +2,7 @@
 
 <?php if(isset($error)): ?>
 
-    <div class="error-mensaje">
+    <div class="error">
         <?= $error ?>
     </div>
 <?php endif; ?>

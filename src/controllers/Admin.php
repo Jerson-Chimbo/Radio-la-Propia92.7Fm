@@ -239,4 +239,12 @@ class Admin{
         file_put_contents('./models/servicios/servicios.json',json_encode($array));
         header('location:/admin/lista/servicios');
     }
+
+    public function addGaleria(){
+        return [
+            'title' => 'Ingresar Imagenes',
+            'template' => 'admin/addGaleria.html.php',
+            'administrador' => true
+        ];
+    }
 }
