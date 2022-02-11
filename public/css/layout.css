@@ -251,14 +251,7 @@ margin-top: 1rem;
     font-size: 1.5rem;
 }
 
-@media screen and (max-width:480px) {
-    .audio-title{
-        font-size: 1.1rem;
-    }
-    .reproductor{
-        height: 60vh;
-    }
-}
+
 
 .noticias{
     width: 80%;
@@ -442,6 +435,9 @@ margin-top: 1rem;
     .noticias > article> h2{
         font-size: 1.1rem;
     }
+    .footer-inf{
+        height: auto;
+    }
 }
 .cuadrado-ul{
     width: 20%;
@@ -616,6 +612,7 @@ article#main-principal{
     font-size: 20px;
     
 } 
+
 /* Estilos para el menu de quienes somos-porque elegirnos */
 .contenedor1{
     width: 100%;
@@ -675,6 +672,25 @@ article#main-principal{
     margin:auto;
     gap: 1rem;
 
+}
+
+@media screen and (max-width:1180px) {
+    .caja {
+        float: none;
+        width: 90%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:1028px) {
+    article#main-principal{
+        float:none;
+        width: 90%;
+
+    }
+    aside#lateral{
+        float: none;
+        width: 100%;
+    }
 }
 .contenedor2>article{
     
@@ -991,4 +1007,46 @@ border-radius:2rem;
 
 textarea{
     font-family:var(--tipografia2);
+}
+
+@media screen and (max-width:800px) {
+    .imagenes-galeria > img{
+        width: 250px;
+        height: 250px;
+        flex-wrap: wrap;
+    }
+    /* article#main-principal>p{
+
+    } */
+    .secundario{
+        width: 90%;
+    }
+    
+    article#main-principal>img{
+        width: 98%;
+        margin: auto;
+    }
+    article#main-principal>h1{
+        font-size: 0.9rem;
+        overflow: auto;
+        padding: 0;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .audio-title{
+        font-size: 1.1rem;
+    }
+    .reproductor{
+        height: 60vh;
+    }
+    .contenedor1>h3{
+        font-size: 1.1rem;
+    }
+    .imagenes-galeria{
+        width: 90%;
+    }
+    .footer-inf{
+        font-size: 1rem;
+    }
 }
