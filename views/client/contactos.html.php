@@ -47,7 +47,7 @@
 
                     <li><a href="tel:(03) 298-4126" target="_blank"><img src="/public/asset/img/telefono.png" alt="telefono"></a><span>(03) 298-4126 </span></li>
 
-                    <li><a href="https://wa.link/9b616r" target="_blank"><img src="/public/asset/img/what.jfif" alt="WhatSapp"></a><span>0997810792</span></li>
+                    <li><a href="https://wa.link/kq3fwz" target="_blank"><img src="/public/asset/img/what.jfif" alt="WhatSapp"></a><span>0997810792</span></li>
 
                     <li><a href="mailto:lapropia927@gmail.com"><img src="/public/asset/img/gmail.png" alt="gmail"></a><span>lapropia927@gmail.com</span></li>
                 </div>

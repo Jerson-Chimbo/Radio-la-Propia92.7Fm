@@ -18,11 +18,13 @@
                 <div class="redes">
                 <a href="https://www.facebook.com/lapropiafm927/about/?ref=page_internal" target="_blank"><img src="/public/asset/img/facebook.jfif" alt="facebook"></a>
                     <a href="https://instagram.com/lapropiafm?utm_medium=copy_link" target="_blank"><img src="/public/asset/img/instagram.jfif" alt="instagram"></a>
-                    <a href="https://wa.link/9b616r" target="_blank"><img src="/public/asset/img/what.jfif" alt="WhatSapp"></a>
+                    <a href="https://wa.link/kq3fwz" target="_blank"><img src="/public/asset/img/what.jfif" alt="WhatSapp"></a>
                     
                 </div>
             </div>
-            <nav class="header-in">
+
+
+           <nav class="header-in">
             <a href="/"> <div class="cuadrado">  Inicio </div></a>
             <a href="/quienes-somos">  <div class="cuadrado">  Quienes Somos</div></a>
             <a href="/programacion">    <div class="cuadrado">  Programación</div></a>
@@ -50,7 +52,7 @@
                     <div ><h3>Redes Sociales</h3>
                     <a href="https://www.facebook.com/lapropiafm927/about/?ref=page_internal" target="_blank"><img src="/public/asset/img/facebook.jfif" alt="facebook"></a>
                     <a href="https://instagram.com/lapropiafm?utm_medium=copy_link" target="_blank"><img src="/public/asset/img/instagram.jfif" alt="instagram"></a>
-                    <a href="https://wa.link/9b616r" target="_blank"><img src="/public/asset/img/what.jfif" alt="WhatSapp"></a>
+                    <a href="https://wa.link/kq3fwz" target="_blank"><img src="/public/asset/img/what.jfif" alt="WhatSapp"></a>
                         </div>
                         
                 </div>
