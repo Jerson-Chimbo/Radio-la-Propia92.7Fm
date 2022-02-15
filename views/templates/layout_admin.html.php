@@ -23,7 +23,7 @@
             <a href="/admin/add/servicios"> <div class="cuadrado-ul"> Ingresar Servicios</div></a>
             <a href="/admin/lista/servicios"> <div class="cuadrado-ul"> Opciones Servicios</div></a>
             <a href="/admin/list-contactos">  <div class="cuadrado-ul"> Contactos Pendientes</div></a>
-            <a href="/admin/add/galeria">  <div class="cuadrado-ul"> Ingresar Videos</div></a>
+            <a href="/admin/add/video">  <div class="cuadrado-ul"> Ingresar Videos</div></a>
             <a href="/admin/add/galeria">  <div class="cuadrado-ul"> Ingresar Fotos</div></a>
         
             

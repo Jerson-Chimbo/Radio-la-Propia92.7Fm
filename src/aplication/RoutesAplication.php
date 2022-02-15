@@ -161,9 +161,17 @@ class RoutesAplication implements  Routes {
                 ],
                 'login' => true
             ],
-
-            
-
+            'admin/add/video' => [
+                'GET' => [
+                    'controller' => $adminController,
+                    'action' => 'viewVideo'
+                ],
+                'POST' => [
+                    'controller' => $adminController,
+                    'action' => 'saveVideo'
+                ],
+                
+            ],
 
             'salir' => [
                 'GET' => [
@@ -171,18 +179,6 @@ class RoutesAplication implements  Routes {
                     'action' => 'logOut'
                 ],
             ],
-
-
-
-
-
-
-
-
-
-
-
-
 
             'admin/list-contactos' => [
                 'GET' => [

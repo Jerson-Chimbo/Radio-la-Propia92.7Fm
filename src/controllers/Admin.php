@@ -248,25 +248,6 @@ class Admin{
         ];
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public function saveGaleria(){
         $datos = file_get_contents('./models/servicios/direccion_imgs.json');
         $array = json_decode($datos,true);
@@ -285,5 +266,33 @@ class Admin{
             ]
         ];
 
+    }
+
+    public function viewVideo(){
+        return [
+            'title' => 'Ingresar Videos',
+            'template' => 'admin/addVideo.html.php',
+            'administrador' => true, 
+            
+        ];
+    }
+
+    public function saveVideo(){
+        $datos = file_get_contents('./models/servicios/direccion_videos.json');
+        $array = json_decode($datos,true);
+        $patch = './public/asset/video/';
+        $nombreArchivo = $patch.$_FILES['video']['name'];
+        $archivoTem = $_FILES['video']['tmp_name'];
+        array_push($array['videos'],ltrim($nombreArchivo,'./'));
+        move_uploaded_file($archivoTem,$nombreArchivo);
+        file_put_contents('./models/servicios/direccion_videos.json',json_encode($array));
+        return [
+            'title' => 'Ingresar Videos',
+            'template' => 'admin/addVideo.html.php',
+            'administrador' => true, 
+            'variables' => [
+                'correcto'=> "Se agregado el video a rendición de cuentas"
+            ]
+        ];
     }
 }
