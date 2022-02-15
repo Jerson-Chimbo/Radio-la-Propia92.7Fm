@@ -13,7 +13,6 @@ private $contactosTable;
     public function home(){
         $datos_json = file_get_contents('./models/noticias/noticias.json');
         $array_datos = json_decode($datos_json,true)["noticias"];
-
         return[
             'title' => 'Radio La Propia 92.7 FM',
             'template' => 'client/home.html.php',
@@ -42,9 +41,14 @@ private $contactosTable;
         ]; 
     }
     public function rendicioncuentas(){
+        $data = file_get_contents('./models/servicios/direccion_videos.json');
+        $videos = json_decode($data,true)['videos'];
         return[
             'title' => 'Rendicion de Cuentas',
             'template' => 'client/rendicioncuentas.html.php',
+            'variables' => [
+                'videos' => $videos
+            ]
    
         ];
     }
@@ -76,36 +80,6 @@ private $contactosTable;
    
         ]; 
     }
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     public function listContactos(){

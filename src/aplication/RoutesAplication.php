@@ -170,6 +170,28 @@ class RoutesAplication implements  Routes {
                     'controller' => $adminController,
                     'action' => 'saveVideo'
                 ],
+               // 'login' => true
+            ],
+            'admin/delete/video' => [
+                'GET' => [
+                    'controller' => $adminController,
+                    'action' => 'deleteViewVideo'
+                ],
+                'POST' => [
+                    'controller' => $adminController,
+                    'action' => 'saveDeleteVideo'
+                ],
+                
+            ],
+            'admin/delete/imagen' => [
+                'GET' => [
+                    'controller' => $adminController,
+                    'action' => 'viewVideo'
+                ],
+                'POST' => [
+                    'controller' => $adminController,
+                    'action' => 'saveVideo'
+                ],
                 
             ],
 

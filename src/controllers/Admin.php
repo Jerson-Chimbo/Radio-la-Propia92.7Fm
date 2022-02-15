@@ -278,12 +278,20 @@ class Admin{
     }
 
     public function saveVideo(){
+        if(count($_FILES) != 0){
+
+        
         $datos = file_get_contents('./models/servicios/direccion_videos.json');
         $array = json_decode($datos,true);
         $patch = './public/asset/video/';
         $nombreArchivo = $patch.$_FILES['video']['name'];
         $archivoTem = $_FILES['video']['tmp_name'];
-        array_push($array['videos'],ltrim($nombreArchivo,'./'));
+        $titleVideo = $_POST['title'];
+        array_push($array['videos'],[
+            'title' => $titleVideo,
+          'direccion' =>  ltrim($nombreArchivo,'./'),
+          ]
+        );
         move_uploaded_file($archivoTem,$nombreArchivo);
         file_put_contents('./models/servicios/direccion_videos.json',json_encode($array));
         return [
@@ -294,5 +302,52 @@ class Admin{
                 'correcto'=> "Se agregado el video a rendición de cuentas"
             ]
         ];
+
+    }else{
+        return [
+            'title' => 'Ingresar Videos',
+            'template' => 'admin/addVideo.html.php',
+            'administrador' => true, 
+            'variables' => [
+                'correcto'=> "El video es muy grande para subirse"
+            ]
+        ];
+    }
+    }
+
+    public function deleteViewVideo(){
+        $data = file_get_contents('./models/servicios/direccion_videos.json');
+        $videos = json_decode($data,true)['videos'];
+        return [
+            'title' => 'Ingresar Imagenes',
+            'template' => 'admin/viewDeleteVideo.html.php',
+            'administrador' => true, 
+            'variables' => [
+                'videos'=> $videos
+            ]
+        ];
+
+    }
+
+    public function saveDeleteVideo(){
+        $datos = file_get_contents('./models/servicios/direccion_videos.json');
+        $array = json_decode($datos,true);
+        $direccionVideo = './';
+        foreach($array['videos'] as $key => $video){
+           foreach($video as $index => $componentes){
+            if($index == 'title' && $componentes == $_POST['title']){
+                echo "si";
+                $direccionVideo .= $array['videos'][$key]['direccion'];
+                unset($array['videos'][$key]);
+        }
+           }    
+            
+        }
+
+
+        file_put_contents('./models/servicios/direccion_videos.json',json_encode($array));
+       
+         unlink($direccionVideo);
+        header('location:/admin/delete/video');
     }
 }

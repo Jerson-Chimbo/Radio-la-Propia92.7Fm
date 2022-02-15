@@ -15,6 +15,11 @@
                     <a href="/"><img src="/public/asset/img/propia.jfif" alt="radio"></a>
                     <span class="slogan">La radio mas grande del planeta</span>
                 </div>
+        
+                <div class="opciones-otras">
+                    <a href="">Eliminar Fotos</a>
+                    <a href="/admin/delete/video">Eliminar Videos</a>
+                </div>
             </div>
             <?php if(isset($_SESSION['admin'])): ?>
             <nav class="header-in admin">

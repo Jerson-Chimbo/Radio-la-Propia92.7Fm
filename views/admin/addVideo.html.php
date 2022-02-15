@@ -7,8 +7,10 @@
     </div>
     <?php endif;?>
             <form action="" method="post" enctype="multipart/form-data">
+            <label for="">Ingrese un título del video</label>
+            <input type="text" name="title" required>
             <label for="">Ingrese un Video:</label>
-        <input type="file" name="video" accept=".mp4">
+        <input type="file" name="video" accept=".mp4" required>
                                      <br>
                     <button type="submit">Guardar</button>
                   </form>
