@@ -110,6 +110,13 @@ class RoutesAplication implements  Routes {
                     'action' => 'programacion'
                 ],
             ],
+            'rendicion/cuentas' => [
+                'GET' => [
+                    'controller' => $homeController,
+                    'action' => 'rendicioncuentas'
+                ],
+            ],
+
             'contactos' => [
                 'GET' => [
                     'controller' => $homeController,

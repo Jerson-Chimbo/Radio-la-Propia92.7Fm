@@ -29,7 +29,8 @@
             <a href="/quienes-somos">  <div class="cuadrado">  Quienes Somos</div></a>
             <a href="/programacion">    <div class="cuadrado">  Programación</div></a>
             <a href="/servicios">   <div class="cuadrado">  Serviciós</div></a>
-            <a href="/contactos">  <div class="cuadrado ultimo">  Contactos</div></a>
+            <a href="/rendicion/cuentas">   <div class="cuadrado-ul">Rendicion de Cuentas</div></a>
+            <a href="/contactos">  <div class="cuadrado">  Contactos</div></a>
             </nav>
         </div>
         <main class="main">

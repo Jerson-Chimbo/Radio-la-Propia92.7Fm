@@ -41,6 +41,13 @@ private $contactosTable;
    
         ]; 
     }
+    public function rendicioncuentas(){
+        return[
+            'title' => 'Rendicion de Cuentas',
+            'template' => 'client/rendicioncuentas.html.php',
+   
+        ];
+    }
     public function contactos(){
         return[
             'title' => 'Contactos',
