@@ -36,6 +36,7 @@ class Admin{
     }
 
     public function saveNoticias(){
+        if(count($_FILES) != 0){
         $noticias = file_get_contents('./models/noticias/noticias.json');
         $array = json_decode($noticias,true);
         if(!empty($_FILES['imagen']['name'])){
@@ -70,7 +71,17 @@ class Admin{
                 'correcto' => 'Se ingreso correctamente la noticia'
             ]
         ];
-
+    }
+    else{
+        return [
+            'title' => 'Agregue una Noticia',
+            'template' => 'admin/addNoticias.html.php',
+            'administrador' => true,
+            'variables' => [
+                'correcto' => 'El video ingresado es muy grande para guardarse, intentelo nuevamente'
+            ]
+        ];
+    }
     }
 
     public function listNoticias(){

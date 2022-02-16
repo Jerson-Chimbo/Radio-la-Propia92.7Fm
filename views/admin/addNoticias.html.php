@@ -8,7 +8,9 @@
         <label for="titulo">Ingrese el Titulo de la Noticia</label>
         <input type="text" name="titulo" required >
         <label for="Imagen">Ingrese la Imagen de la Noticia</label>
-        <input type="file" name="imagen" required />
+        <input type="file" name="imagen" />
+        <label for="video">Ingrese el video de la Noticia</label>
+        <input type="file" name="video" accept= ".mp4" />
         <label for="descripcion">Ingrese la Descripcion de la Noticia</label>
         <textarea name="descripcion" required></textarea>
         <button type="submit">Guardar</button>

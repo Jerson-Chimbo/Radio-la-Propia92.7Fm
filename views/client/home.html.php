@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="noticias">
-                    <h2>Ultimas Noticias</h2>
+                    <h2 style="width:80%; margin: 0 auto 2rem auto; ">Ultimas Noticias</h2>
                     <div class="presentacion-noticias">
                     <?php
 
@@ -32,7 +32,7 @@ foreach($noticias as $value): ?>
                        ?>
                         <img src="/<?= $value['img'] ?>" alt="">
                         <?php else: ?>
-                        <video src="/<?= $value['video'] ?>" controls></video>
+                        <video class= "videos-noticias-final" src="/<?= $value['video'] ?>" controls></video>
                         <?php endif; ?>
                         <h2> <?= $value['title'] ?> </h2>
                         <div> <?php
