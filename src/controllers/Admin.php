@@ -163,7 +163,16 @@ class Admin{
         ];
 
         file_put_contents('./models/servicios/servicios.json',json_encode($array));
-        header('location:/');
+        return [
+            'title' => 'Ingresar Servicios',
+            'template' => 'admin/addServicios.html.php',
+            'administrador' => true,
+            'variables' => [
+                "correcto" => "Se agrego correctamente el servicio"
+            ]
+        ];
+
+
         
     }
 
