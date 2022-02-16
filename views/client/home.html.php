@@ -19,14 +19,21 @@
                     </div>
                 </div>
                 <div class="noticias">
-                    <h2>Las mejores noticias del momento</h2>
+                    <h2>Ultimas Noticias</h2>
+                    <div class="presentacion-noticias">
                     <?php
 
 use aplication\Utiles;
 
 foreach($noticias as $value): ?>
                     <article>
+                       <?php 
+                            if(!empty($value['img'])):
+                       ?>
                         <img src="/<?= $value['img'] ?>" alt="">
+                        <?php else: ?>
+                        <video src="/<?= $value['video'] ?>" controls></video>
+                        <?php endif; ?>
                         <h2> <?= $value['title'] ?> </h2>
                         <div> <?php
                         $string = new Utiles($value['descripcion']);
@@ -36,5 +43,6 @@ foreach($noticias as $value): ?>
 
                     <?php endforeach; ?>
                 </div>
+            </div>
 
                

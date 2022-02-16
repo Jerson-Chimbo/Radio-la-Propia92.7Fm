@@ -38,15 +38,28 @@ class Admin{
     public function saveNoticias(){
         $noticias = file_get_contents('./models/noticias/noticias.json');
         $array = json_decode($noticias,true);
-        $patch = './public/asset/img/';
-        $nombreArchivo= $_FILES['imagen']['name'];
-        $nombreGuardar = $patch.$nombreArchivo;
-        $archivoTemporal = $_FILES['imagen']['tmp_name'];
-        $array['noticias'][] = [
-            'title' => $_POST['titulo'],
-            'img' => ltrim($nombreGuardar,'./'),
-            'descripcion' => $_POST['descripcion']
-        ];
+        if(!empty($_FILES['imagen']['name'])){
+            $patch = './public/asset/img/';
+            $nombreArchivo= $_FILES['imagen']['name'];
+            $nombreGuardar = $patch.$nombreArchivo;
+            $archivoTemporal = $_FILES['imagen']['tmp_name'];
+            $array['noticias'][] = [
+                'title' => $_POST['titulo'],
+                'img' => ltrim($nombreGuardar,'./'),
+                'descripcion' => $_POST['descripcion']
+            ];
+        }else{
+            $nombreArchivo= $_FILES['video']['name'];
+            $patchVideos = './public/asset/video/';
+            $nombreGuardar = $patchVideos.$nombreArchivo;
+            $archivoTemporal = $_FILES['video']['tmp_name'];
+            $array['noticias'][] = [
+                'title' => $_POST['titulo'],
+                'video' => ltrim($nombreGuardar,'./'),
+                'descripcion' => $_POST['descripcion']
+            ];
+        }
+        
         move_uploaded_file($archivoTemporal,$nombreGuardar);
         file_put_contents('./models/noticias/noticias.json',json_encode($array));
         return [
