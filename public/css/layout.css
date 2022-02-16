@@ -1124,7 +1124,7 @@ button{
  .list-videos-delete > blockquote > h3{
      text-align: center;
  }
- .list-videos-delete > blockquote video{
+ .list-videos-delete > blockquote video , img{
      height: 10rem;
      width: 10rem;
  }

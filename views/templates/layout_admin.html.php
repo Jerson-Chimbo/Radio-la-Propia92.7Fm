@@ -15,11 +15,12 @@
                     <a href="/"><img src="/public/asset/img/propia.jfif" alt="radio"></a>
                     <span class="slogan">La radio mas grande del planeta</span>
                 </div>
-        
+                <?php if(isset($_SESSION['admin'])): ?>
                 <div class="opciones-otras">
-                    <a href="">Eliminar Fotos</a>
+                    <a href="/admin/delete/imagen">Eliminar Fotos</a>
                     <a href="/admin/delete/video">Eliminar Videos</a>
                 </div>
+                <?php endif; ?>
             </div>
             <?php if(isset($_SESSION['admin'])): ?>
             <nav class="header-in admin">

@@ -170,7 +170,7 @@ class RoutesAplication implements  Routes {
                     'controller' => $adminController,
                     'action' => 'saveVideo'
                 ],
-               // 'login' => true
+               'login' => true
             ],
             'admin/delete/video' => [
                 'GET' => [
@@ -181,17 +181,19 @@ class RoutesAplication implements  Routes {
                     'controller' => $adminController,
                     'action' => 'saveDeleteVideo'
                 ],
+                'login' => true
                 
             ],
             'admin/delete/imagen' => [
                 'GET' => [
                     'controller' => $adminController,
-                    'action' => 'viewVideo'
+                    'action' => 'deleteViewImagen'
                 ],
                 'POST' => [
                     'controller' => $adminController,
-                    'action' => 'saveVideo'
+                    'action' => 'saveDeleteImagen'
                 ],
+                'login' => true
                 
             ],
 

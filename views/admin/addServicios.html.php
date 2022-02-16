@@ -13,13 +13,13 @@
         <label for="">Ingrese el precio</label>
         <input type="number" name="precio" required>
         <label for="">Ingrese duracion del curso en horas</label>
-        <input type="number" name="horas">
+        <input type="number" name="horas" required>
         <label for="">Ingrese los requisitos separados por comas</label>
-        <input type="text" name="requisitos">
+        <input type="text" name="requisitos" required>
         <label for="">Ingrese primera imagen</label>
-        <input type="file" name="imagen1">
+        <input type="file" name="imagen1" required>
         <label for="">Ingrese segunda imagen</label>
-        <input type="file" name="imagen2">
+        <input type="file" name="imagen2" required>
         <label for="">Ingrese la descripcion</label>
         <textarea name="descripcion" id="" cols="30" rows="10" required></textarea>
         <button type="submit">Ingresar</button>

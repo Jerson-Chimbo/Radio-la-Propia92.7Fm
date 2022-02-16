@@ -267,6 +267,42 @@ class Admin{
         ];
 
     }
+    public function deleteViewImagen(){
+        $datos = file_get_contents('./models/servicios/direccion_imgs.json');
+        $array = json_decode($datos,true)['imgs'];
+        return [
+            'title' => 'Ingresar Imagenes',
+            'template' => 'admin/viewDeleteImagen.html.php',
+            'administrador' => true, 
+            'variables' => [
+                'imagenes'=> $array
+            ]
+            
+        ];
+
+    }
+    public function saveDeleteImagen(){
+        $datos = file_get_contents('./models/servicios/direccion_imgs.json');
+        $array = json_decode($datos,true);
+        $direccionimagen = "./";
+
+        foreach($array['imgs'] as $key => $imagen ){
+            if($imagen == $_POST['foto']){
+                $direccionimagen .= $imagen;
+                unset($array['imgs'][$key]);
+            }
+        }
+        file_put_contents('./models/servicios/direccion_imgs.json', json_encode($array));
+        unlink($direccionimagen);
+
+        header('location:/admin/delete/imagen');
+
+        
+
+    }
+
+
+
 
     public function viewVideo(){
         return [

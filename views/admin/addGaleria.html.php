@@ -8,7 +8,7 @@
     <?php endif;?>
             <form action="" method="post" enctype="multipart/form-data">
             <label for="">Ingrese la Foto a Ingresar:</label>
-        <input type="file" name="foto">
+        <input type="file" name="foto" required>
                                      <br>
                     <button type="submit">Guardar</button>
                   </form>
