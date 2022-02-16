@@ -78,3 +78,49 @@
 
 
 }
+.logo >a > img{
+	animation: logo 1.5s infinite linear alternate;
+	
+}
+.slogan{
+	animation: salto 2s infinite alternate;
+}
+@keyframes salto {
+	0%{
+		transform:translate(-50%,-50%) scale(1.1);
+	}
+	100%{
+		transform:translate(-50%,-50%) scale(0.9);
+	}
+}
+.redes img{
+	animation: agrandar 2s infinite;
+}
+@keyframes agrandar {
+	0%{
+		transform: scale(1.1);
+	}
+	50%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(0.9);
+	}
+}
+@keyframes logo {
+	0%{
+		transform: translateY(-8rem) rotateX(0deg);
+	}
+	25%{
+		transform: translateY(-8rem) rotateX(0deg);
+	}	
+	50%{
+		transform: translateY(-8rem) rotateX(90deg);
+	}
+	75%{
+		transform: translateY(-8rem) rotateX(360deg);
+	}
+	100%{
+		transform: translateY(-8rem) rotateX(360deg);
+	}
+}
