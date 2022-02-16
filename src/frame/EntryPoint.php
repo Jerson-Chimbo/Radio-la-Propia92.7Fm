@@ -34,6 +34,12 @@ class EntryPoint{
 
     public function run(){
         $routes = $this->routesAplicaction->getRoutesAplication();
+        if(! isset($routes[$this->route])){
+            header('location: /error/404');
+        }else if(! isset($routes[$this->route][$this->method])){
+            header('location: /error/404');
+        }
+
         $controller = $routes[$this->route][$this->method]['controller'];
         $action = $routes[$this->route][$this->method]['action'];
         if(isset($routes[$this->route]['login']) && 

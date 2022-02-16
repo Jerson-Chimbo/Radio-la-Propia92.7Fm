@@ -1195,3 +1195,25 @@ button{
         width: 100%;
     }
 }
+.error-session{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+.error404{
+    width: 80%;
+    margin: auto;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error404 > img{
+    width: 50%;
+    height: 30rem;
+}

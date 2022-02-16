@@ -211,6 +211,18 @@ class RoutesAplication implements  Routes {
                 ],
                 'login' => true
             ],
+            'error/session' => [
+                'GET' => [
+                    'controller' => $homeController,
+                    'action' => 'errorSession'
+                ],
+            ],
+            'error/404' => [
+                'GET' => [
+                    'controller' => $homeController,
+                    'action' => 'error404'
+                ],
+            ],
 
             
        ];

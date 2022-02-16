@@ -93,4 +93,16 @@ private $contactosTable;
             ]
         ];
     }
+    public function errorSession(){
+        return[
+            'title' => 'Contactos',
+            'template' => 'client/errorSession.html.php',
+        ];
+    }
+    public function error404(){
+        return[
+            'title' => 'Contactos',
+            'template' => 'client/error404.html.php',
+        ];
+    }
 }
