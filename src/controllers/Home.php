@@ -9,6 +9,7 @@ private $contactosTable;
        $this->contactosTable = $contactosTable;
 
    }
+   
 
     public function home(){
         $datos_json = file_get_contents('./models/noticias/noticias.json');

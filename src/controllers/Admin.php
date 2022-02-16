@@ -14,12 +14,12 @@ class Admin{
     }
 
     public function login(){
-        $contra = password_hash('12345',PASSWORD_DEFAULT);
+        $contra = password_hash('123456',PASSWORD_DEFAULT);
         $datos = [
-            'cedula' => '0123456789',
+            'cedula' => '0997810792',
             'clave' => $contra
         ];
-        // $this->loginTable->insert($datos);
+        //$this->loginTable->insert($datos);
         return [
             'title' => 'Inicie Session',
             'template' => 'admin/login_admin.html.php',
