@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Radio la Propia 92.7FM radio la propia radio la propia de Guaranda Ecuador">
     <meta name="author" content="Vicente Ninabanda">
-    <meta name="author" content="Dorian Armijos">
     <meta name="author" content="Jerson Chimbo">
-    <meta name="author" content="Dorian Armijos">
     <link rel="apple-touch-icon" sizes="57x57" href="/public/asset/favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/public/asset/favicon/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/public/asset/favicon/apple-icon-72x72.png">

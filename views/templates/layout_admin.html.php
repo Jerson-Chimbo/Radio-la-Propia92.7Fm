@@ -19,6 +19,8 @@
                 <div class="opciones-otras">
                     <a href="/admin/delete/imagen">Eliminar Fotos</a>
                     <a href="/admin/delete/video">Eliminar Videos</a>
+                    <a href="/admin/add/pdf">Rendicion de Cuentas</a>
+
                 </div>
                 <?php endif; ?>
             </div>

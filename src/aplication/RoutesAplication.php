@@ -94,6 +94,18 @@ class RoutesAplication implements  Routes {
                 ],
                 'login' => true
             ],
+
+            'admin/add/pdf'=> [
+                'GET' => [
+                    'controller' => $adminController,
+                    'action' => 'addPdf'
+                ],
+                'POST' => [
+                    'controller' => $adminController,
+                    'action' => 'savePdf'
+                ],
+                'login' => true
+            ],
             'servicios' => [
                 'GET' => [
                     'controller' => $serviciosController,

@@ -43,12 +43,15 @@ private $contactosTable;
     }
     public function rendicioncuentas(){
         $data = file_get_contents('./models/servicios/direccion_videos.json');
+        $dataPdf = file_get_contents('./models/servicios/pdfs.json');
+        $resPdf = json_decode($dataPdf, true)['data'];
         $videos = json_decode($data,true)['videos'];
         return[
             'title' => 'Rendicion de Cuentas',
             'template' => 'client/rendicioncuentas.html.php',
             'variables' => [
-                'videos' => $videos
+                'videos' => $videos,
+                'datos' => $resPdf
             ]
    
         ];

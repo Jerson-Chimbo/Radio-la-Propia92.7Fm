@@ -1071,11 +1071,16 @@ button{
     align-items: center;
     gap: 2rem;
     box-shadow: var(--box-shadow);
+    
 }
 .videos-list>section>video{
     width: 30rem;
     box-shadow: var(--box-shadow);
     padding: 0.5rem;
+}
+.videos-list>section{
+    width: 30rem;
+
 }
 .videos-list > section > h2{
     text-align: center;
@@ -1091,6 +1096,12 @@ button{
     font-weight: bold;
     justify-content:center;
     overflow: auto;
+}
+.videos-list p{
+    width: 100%;
+    height: auto;
+    overflow-wrap: break-word;
+     
 }
  .list-videos-delete{
     display: flex;
@@ -1230,4 +1241,38 @@ button{
     grid-area: imge;
     object-fit: cover;
     border-radius: 0.5rem;
+}
+
+
+/* Estilos para el pdf*/
+
+.contenedorpdfs{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    width: 60%;
+    box-shadow: var(--box-shadow);
+    margin: auto;
+    padding: 1rem;
+
+    
+
+
+}
+.contenedorpdfs  a{
+    color: #0a0a0a;
+    font-size: 1.2rem;
+}
+.contenedorpdfs>section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid blue;
+}
+.contenedorpdfs img{
+        width: 50px;
+        height: 50px;
 }

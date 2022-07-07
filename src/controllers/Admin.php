@@ -358,6 +358,7 @@ class Admin{
         $titleVideo = $_POST['title'];
         array_push($array['videos'],[
             'title' => $titleVideo,
+            'descripcion' => $_POST['descripcion'],
           'direccion' =>  ltrim($nombreArchivo,'./'),
           ]
         );
@@ -419,4 +420,68 @@ class Admin{
          unlink($direccionVideo);
         header('location:/admin/delete/video');
     }
+
+    public function addPdf(){
+        return [
+            'title' => 'Ingresar Pdf',
+            'template' => 'admin/addPdf.html.php',
+            'administrador' => true
+        ];
+    }
+    public function savePdf(){
+        if(count($_FILES) != 0){
+            $yearArr = preg_split('/-/',$_POST['date']);
+            $year = $yearArr[0];
+            $datos = file_get_contents('./models/servicios/pdfs.json');
+            $array = json_decode($datos,true);
+            $patch = './public/asset/pdfs/';
+            $nombreArchivo = $patch.$_FILES['pdfs']['name'];
+            $archivoTem = $_FILES['pdfs']['tmp_name'];
+            $titleVideo = $_POST['titulo'];
+            $new = false;
+            foreach ($array['data'] as $index => $ref){
+                foreach ($ref as $key => $valor){
+                  
+                    if($key == 'year'){
+                        if($valor == $year){
+                            //var_dump($array['data'][$index]);
+                            if($valor == $year )
+                              array_push($array['data'][$index]['pdfs'],[
+                                'title' => $titleVideo,
+                                'direccion' =>  ltrim($nombreArchivo,'./'),
+                              ]);
+                            //var_dump($array['data'][$index]);`
+                            $new= true;
+                              
+                        }
+                    }
+                }
+            }
+            if(!$new){
+                $array['data'][] = [
+                    'year' =>$year,
+                    'pdfs' => [ array(
+                        'title' => $titleVideo,
+                      'direccion' =>  ltrim($nombreArchivo,'./'),)
+                      ]
+
+                ];
+            }
+            	//var_dump($array);
+            
+            move_uploaded_file($archivoTem,$nombreArchivo);
+            file_put_contents('./models/servicios/pdfs.json',json_encode($array, JSON_UNESCAPED_UNICODE));
+
+            return [
+                'title' => 'Ingresar Pdf',
+                'template' => 'admin/addPdf.html.php',
+                'administrador' => true,
+                'variables' => [
+                    'correcto'=> "Se agregado el PDF a rendición de cuentas"
+                ]
+
+            ];
+    
+        }
+        }
 }

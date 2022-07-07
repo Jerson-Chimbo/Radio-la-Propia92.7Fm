@@ -3,7 +3,6 @@
 include __DIR__ . '/vendor/autoload.php';
 use frame\EntryPoint;
 use aplication\RoutesAplication;
-
 $route = ltrim(strtok($_SERVER['REQUEST_URI'],'?'),'/');
 
 try{
